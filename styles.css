@@ -1,0 +1,28 @@
+body {
+  font-family: Sansation;
+}
+
+a.nav-link {
+  font-size: 15px;
+  color: white !important;
+}
+
+.active a.nav-link {
+  border-bottom: 1px solid #4DBD99;
+}
+
+.bg {
+  margin-top: 77px;
+  background-image: url('imgs/home.png');
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .bg {
+    margin-top: 0;
+    height: 100%;
+  }
+}
