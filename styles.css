@@ -1,6 +1,5 @@
 body {
   font-family: Sansation;
-  background-color: #000000;
 }
 
 /* Navbar */
@@ -32,7 +31,14 @@ a.nav-link {
 @media (min-width: 992px) {
   .hero-bg {
     height: 100%;
+    max-height: 488px;
     background-position: center top;
     background-size: 100% auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-bg {
+    max-height: 579px;
   }
 }
