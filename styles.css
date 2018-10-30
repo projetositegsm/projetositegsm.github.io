@@ -1,5 +1,6 @@
 body {
   font-family: Sansation;
+  background-color: #000000;
 }
 
 a.nav-link {
@@ -12,9 +13,9 @@ a.nav-link {
 }
 
 .bg {
-  margin-top: 77px;
+  margin: 77px -15px 0 -15px;
   background-image: url('imgs/home.png');
-  height: 50%;
+  height: 45%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +23,8 @@ a.nav-link {
 
 @media (min-width: 992px) {
   .bg {
-    margin-top: 0;
     height: 100%;
+    background-position: center top;
+    background-size: 100% auto;
   }
 }
