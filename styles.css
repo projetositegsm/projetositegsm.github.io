@@ -14,6 +14,11 @@ a.nav-link {
   border-bottom: 3px solid #4DBD99;
 }
 
+.navbar-dark .navbar-toggler-icon {
+  background-image: url('imgs/btn_dropdown.png');
+  background-size: contain;
+}
+
 /* Hero section */
 .hero-bg {
   margin: 77px -15px 0 -15px;
