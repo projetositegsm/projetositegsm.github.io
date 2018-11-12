@@ -1,0 +1,13 @@
+a.nav-link {
+  font-size: 15px;
+  color: white !important;
+}
+
+.active a.nav-link {
+  border-bottom: 3px solid #4DBD99;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url('imgs/btn_dropdown.png');
+  background-size: contain;
+}

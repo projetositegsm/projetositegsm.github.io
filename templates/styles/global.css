@@ -1,0 +1,23 @@
+body {
+  font-family: Sansation;
+}
+
+section {
+  margin-top: 80px;
+}
+
+/* Section general */
+.section-header h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 45px;
+  margin-bottom: 8px;
+  color: #4DBD99;
+}
+
+.section-header p {
+  font-size: 24px;
+  margin-bottom: 32px;
+  line-height: 28px;
+  color: #6E6E6E;
+}

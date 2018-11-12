@@ -4,360 +4,661 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="styles.css">
-
     <title>Silveira Marques Engenharia</title>
+
+    <style>
+      @font-face {
+        font-family: Sansation;
+        src: url('fonts/Sansation_Regular.ttf');
+        font-style: normal;
+        font-weight: normal;
+      }
+
+      body {
+  font-family: Sansation;
+}
+
+section {
+  margin-top: 80px;
+}
+
+/* Section general */
+.section-header h2 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 45px;
+  margin-bottom: 8px;
+  color: #4DBD99;
+}
+
+.section-header p {
+  font-size: 24px;
+  margin-bottom: 32px;
+  line-height: 28px;
+  color: #6E6E6E;
+}
+      a.nav-link {
+  font-size: 15px;
+  color: white !important;
+}
+
+.active a.nav-link {
+  border-bottom: 3px solid #4DBD99;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url('imgs/btn_dropdown.png');
+  background-size: contain;
+}
+      .hero-bg {
+  margin: 77px -15px 0 -15px;
+  background-image: url('imgs/home.png');
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .hero-bg {
+    height: 100%;
+    max-height: 488px;
+    background-position: center top;
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-bg {
+    max-height: 579px;
+  }
+}
+      .cases-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cases-col {
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+@media (min-width: 992px) {
+  .cases-col {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+.square {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+
+.square .description .detail {
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-bottom: 16px;
+  background-color: #4DBD99;
+}
+
+.square .description p {
+  margin: 0;
+}
+
+.square .description {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.1s linear;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.square:hover .description {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.square .case-img {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.img-logo {
+  background-image: url('imgs/cases/logo.png');
+}
+
+.img-1 {
+  background-image: url('imgs/cases/01_Alphaville Burle Marx_4.png');
+}
+
+.img-2 {
+  background-image: url('imgs/cases/02_Alphaville Jacuhy_1.png');
+}
+
+.img-3 {
+  background-image: url('imgs/cases/03_Alphaville Barra da Tijuca_8.png');
+}
+      .tk-footer-wrapper {
+  background-color: #4DBD99;
+
+  background-image: url("imgs/footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.tk-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+@media (min-width: 992px) {
+  .tk-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 96px 24px;
+    padding-top: 136px;
+  }
+}
+
+.footer-logo {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 32px 0;
+}
+
+@media (min-width: 992px) {
+  .footer-logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .address-n-contact-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.tk-footer .address-wrapper {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 992px) {
+  .tk-footer .address-wrapper {
+    margin-bottom: 0;
+    padding-right: 32px;
+    border-right: 1px solid white;
+  }
+}
+
+.tk-footer h3 {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: bold;
+  color: white;
+}
+
+.tk-footer .contact {
+  font-size: 16px;
+  line-height: 1;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.tk-footer a.email {
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .social-contacts {
+    margin-left: 32px;
+  }
+}
+
+.tk-footer .social-contacts a {
+  margin-right: 8px;
+}
+      .tk-modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+.tk-btn {
+  display: block;
+  position: absolute;
+  z-index: 2000;
+  width: 33px;
+  height: 65px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.tk-btn.left {
+  background-image: url('imgs/left.png');
+  left: 0;
+  top: 50%;
+}
+
+.tk-btn.right {
+  background-image: url('imgs/right.png');
+  right: 0;
+  top: 50%;
+}
+
+.tk-modal .tk-close {
+  background-image: url('imgs/btn_close.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 24px;
+  cursor: pointer;
+}
+
+.tk-modal-content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+}
+
+.tk-modal-content img {
+  width: 700px;
+  max-width: 100%;
+}
+
+.tk-modal-content .description {
+  margin-top: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tk-modal-content span {
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+}
+    </style>
   </head>
+
   <body>
+    
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #000000;">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="imgs/logo.png" width="216" height="54" />
+    </a>
+    <button class="navbar-toggler border-0" style="color: #4DBD99;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <!-- Start of Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #000000;">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="imgs/logo.png" width="216" height="54" />
-        </a>
-        <button class="navbar-toggler border-0" style="color: #4DBD99;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2 active">
-              <a class="nav-link" href="#">QUEM SOMOS <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
-              <a class="nav-link" href="#">ATUAÇÃO</a>
-            </li>
-            <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
-              <a class="nav-link" href="#">CASES</a>
-            </li>
-            <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
-              <a class="nav-link" href="#">PRODUTOS</a>
-            </li>
-            <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
-              <a class="nav-link" href="#">CONTATO</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- End of Navbar -->
-
-    <!-- Hero -->
-    <div style="background-color: black;">
-      <div class="container">
-        <div class="hero-bg"></div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2 active">
+          <a class="nav-link" href="#">QUEM SOMOS</a>
+        </li>
+        <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
+          <a class="nav-link" href="#">ATUAÇÃO</a>
+        </li>
+        <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
+          <a class="nav-link" href="#gsm-cases">CASES</a>
+        </li>
+        <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
+          <a class="nav-link" href="#gsm-products">PRODUTOS</a>
+        </li>
+        <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
+          <a class="nav-link" href="#">CONTATO</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      <div style="background-color: black;">
+  <div class="container">
+    <div class="hero-bg"></div>
+  </div>
+</div>
+      <section id="gms-cases" class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="section-header">
+        <h2>Cases</h1>
+        <p>Projetos realizados</p>
       </div>
     </div>
-    <!-- End of Hero -->
-
-    <!-- Cases section -->
-    <section class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-header">
-            <h2>Cases</h1>
-            <p>Projetos realizados</p>
+    <div class="col-12">
+      <!-- Start of cases section -->
+      <div class="cases-section">
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+            <div class="description" onclick="openModalImg(0);">
+              <span class="detail"></span>
+              <p>Alphaville<br />burle marx</p>
+            </div>
           </div>
         </div>
-        <div class="col-12">
-          <!-- Start of cases section -->
-          <div class="cases-section">
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-                <div class="description" onclick="openModalImg(0);">
-                  <span class="detail"></span>
-                  <p>Alphaville<br />burle marx</p>
-                </div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-2"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-3"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-1"></div>
-              </div>
-            </div>
-            <div class="cases-col">
-              <div class="square">
-                <div class="case-img img-logo"></div>
-              </div>
-            </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
           </div>
-          <!-- End of cases section -->
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-2"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-3"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-1"></div>
+          </div>
+        </div>
+        <div class="cases-col">
+          <div class="square">
+            <div class="case-img img-logo"></div>
+          </div>
         </div>
       </div>
-    </section>
-    <!-- End of Cases section -->
-
-    <!-- Start of Products -->
-    <div style="position: relative;">
-      <div class="products-section-bg"></div>
-      <section id="products-section" class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-header">
-              <h2>Produtos</h1>
-              <p>Conheça nossos produtos</p>
+      <!-- End of cases section -->
+    </div>
+  </div>
+</section>
+      <div class="tk-footer-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="tk-footer">
+          <img class="footer-logo" src="imgs/logo_footer.png" />
+          <div class="address-n-contact-wrapper">
+            <div class="address-wrapper">
+              <h3>CONTATO</h3>
+              <p class="contact">
+                Rua Sebastião Lanva, 317<br/>
+                CEP 13805-027 - Mogi Mirim/SP
+              </p>
+              <p class="contact">
+                +55 11 5096-4265
+              </p>
+              <a class="email">
+                contato@silveiramarques.com
+              </a>
+            </div>
+            <div class="social-contacts">
+              
+                <a href="#">
+                  <img src="imgs/btn_facebook.png" />
+                </a>
+              
+                <a href="#">
+                  <img src="imgs/btn_instagram.png" />
+                </a>
+              
+                <a href="#">
+                  <img src="imgs/btn_linkedin.png" />
+                </a>
+              
             </div>
           </div>
-          <div class="col-12">
-            <div class="product-card">
-              <div class="section product-images">
-                <div class="highlight-img">
-                  <img id="expandedImg" style="width: 100%;" src="imgs/products/1.png" />
-                </div>
-                <div class="thumbnails-row">
-                  <div class="thumbnail-col">
-                    <img src="imgs/products/1.png" onclick="openImg(this);" />
-                  </div>
-                  <div class="thumbnail-col">
-                    <img src="imgs/cases/01_Alphaville Burle Marx_4.png" onclick="openImg(this);" />
-                  </div>
-                  <div class="thumbnail-col">
-                    <img src="imgs/cases/02_Alphaville Jacuhy_1.png" onclick="openImg(this);" />
-                  </div>
-                </div>
-              </div>
-              <div class="section product-description">
-                <div class="title">
-                  <h3>Nome do Projeto</h3>
-                  <p>Mogi Mirim - SP</p>
-                </div>
-                <p class="text-center">
-                Residência com 155m², 3 dormitórios com suíte.<br /><br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt, augue sit amet egestas mattis, purus odio egestas velit, nec scelerisque erat dolor vitae massa. Etiam fringilla leo id leo dictum, ac gravida nulla commodo. Phasellus velit dolor, pulvinar vel quam in, ornare faucibus nisl.<br /><br />
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris imperdiet pharetra eros at rutrum.
-                </p>
-              </div>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- End of Products -->
-
-    <!-- Start of Footer -->
-    <footer>
-      footer
-    </footer>
-    <!-- End of Footer -->
-
-    <!-- Img Modal -->
-    <div id="imgModal" class="tk-modal">
-      <span class="tk-close" onclick="closeModalImg();"></span>
-      <span class="tk-btn left" onclick="goLeft();"></span>
-      <span class="tk-btn right" onclick="goRight();"></span>
-      <div class="tk-modal-content">
-        <img id="imgInModal"/>
-        <div class="description">
-          <span id="projectName"></span>
-          <span id="counter"></span>
         </div>
       </div>
     </div>
+  </div>
+</div>
+      <div id="imgModal" class="tk-modal">
+  <span class="tk-close" onclick="closeModalImg();"></span>
+  <span class="tk-btn left" onclick="goLeft();"></span>
+  <span class="tk-btn right" onclick="goRight();"></span>
+  <div class="tk-modal-content">
+    <img id="imgInModal"/>
+    <div class="description">
+      <span id="projectName"></span>
+      <span id="counter"></span>
+    </div>
+  </div>
+</div>
+    
 
     <script>
       let currModalImgIdx = 0;
-      const images = [
-        {
-          src: 'imgs/products/1.png',
-          description: 'Nome do projeto',
-        },
-        {
-          src: 'imgs/cases/02_Alphaville Jacuhy_1.png',
-          description: 'Nome do projeto',
-        },
-        {
-          src: 'imgs/cases/03_Alphaville Barra da Tijuca_8.png',
-          description: 'Nome do projeto',
-        }
-      ];
+const images = [
+  {
+    src: 'imgs/products/1.png',
+    description: 'Nome do projeto',
+  },
+  {
+    src: 'imgs/cases/02_Alphaville Jacuhy_1.png',
+    description: 'Nome do projeto',
+  },
+  {
+    src: 'imgs/cases/03_Alphaville Barra da Tijuca_8.png',
+    description: 'Nome do projeto',
+  }
+];
 
-      function openImg(img) {
-        var expandImg = document.getElementById("expandedImg");
-        expandImg.src = img.src;
-      }
+function openImg(img) {
+  var expandImg = document.getElementById("expandedImg");
+  expandImg.src = img.src;
+}
 
-      function closeModalImg() {
-        const modal = document.getElementById("imgModal");
-        modal.style.display = "none";
-      }
+function closeModalImg() {
+  const modal = document.getElementById("imgModal");
+  modal.style.display = "none";
+}
 
-      function goRight() {
-        currModalImgIdx = (currModalImgIdx + 1)%(images.length);
-        selectImage();
-      }
+function goRight() {
+  currModalImgIdx = (currModalImgIdx + 1)%(images.length);
+  selectImage();
+}
 
-      function goLeft() {
-        currModalImgIdx = (currModalImgIdx - 1 + images.length)%(images.length);
-        selectImage();
-      }
+function goLeft() {
+  currModalImgIdx = (currModalImgIdx - 1 + images.length)%(images.length);
+  selectImage();
+}
 
-      function selectImage() {
-        const imgInModal = document.getElementById("imgInModal");
-        const projectName = document.getElementById("projectName");
-        const counter = document.getElementById("counter");
+function selectImage() {
+  const imgInModal = document.getElementById("imgInModal");
+  const projectName = document.getElementById("projectName");
+  const counter = document.getElementById("counter");
 
-        imgInModal.src = images[currModalImgIdx].src;
-        projectName.textContent = images[currModalImgIdx].description;
-        counter.textContent = `${currModalImgIdx+1} de ${images.length}`;
-      }
+  imgInModal.src = images[currModalImgIdx].src;
+  projectName.textContent = images[currModalImgIdx].description;
+  counter.textContent = `${currModalImgIdx+1} de ${images.length}`;
+}
 
-      function openModalImg(imgIndex) {
-        const modal = document.getElementById("imgModal");
-        currModalImgIdx = imgIndex;
-        selectImage();
-        modal.style.display = "block";
-      }
+function openModalImg(imgIndex) {
+  const modal = document.getElementById("imgModal");
+  currModalImgIdx = imgIndex;
+  selectImage();
+  modal.style.display = "block";
+}
 
-      function checkKey(e) {
-        e = e || window.event;
-        if (e.keyCode == '37') {
-          goLeft();
-        }
-        else if (e.keyCode == '39') {
-          goRight();
-        }
-      }
+function checkKey(e) {
+  e = e || window.event;
+  if (e.keyCode == '37') {
+    goLeft();
+  }
+  else if (e.keyCode == '39') {
+    goRight();
+  }
+}
 
-      document.onkeydown = checkKey;
+document.onkeydown = checkKey;
     </script>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

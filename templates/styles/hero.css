@@ -1,0 +1,23 @@
+.hero-bg {
+  margin: 77px -15px 0 -15px;
+  background-image: url('imgs/home.png');
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  .hero-bg {
+    height: 100%;
+    max-height: 488px;
+    background-position: center top;
+    background-size: 100% auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-bg {
+    max-height: 579px;
+  }
+}

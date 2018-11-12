@@ -1,0 +1,89 @@
+.cases-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cases-col {
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+@media (min-width: 992px) {
+  .cases-col {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+.square {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+
+.square .description .detail {
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin-bottom: 16px;
+  background-color: #4DBD99;
+}
+
+.square .description p {
+  margin: 0;
+}
+
+.square .description {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.1s linear;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.square:hover .description {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.square .case-img {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.img-logo {
+  background-image: url('imgs/cases/logo.png');
+}
+
+.img-1 {
+  background-image: url('imgs/cases/01_Alphaville Burle Marx_4.png');
+}
+
+.img-2 {
+  background-image: url('imgs/cases/02_Alphaville Jacuhy_1.png');
+}
+
+.img-3 {
+  background-image: url('imgs/cases/03_Alphaville Barra da Tijuca_8.png');
+}
