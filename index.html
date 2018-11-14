@@ -14,7 +14,8 @@
         font-weight: normal;
       }
 
-      body {
+      
+        body {
   font-family: Sansation;
 }
 
@@ -37,7 +38,7 @@ section {
   line-height: 28px;
   color: #6E6E6E;
 }
-      a.nav-link {
+        a.nav-link {
   font-size: 15px;
   color: white !important;
 }
@@ -50,7 +51,7 @@ section {
   background-image: url('imgs/btn_dropdown.png');
   background-size: contain;
 }
-      .hero-bg {
+        .hero-bg {
   margin: 77px -15px 0 -15px;
   background-image: url('imgs/home.png');
   height: 45%;
@@ -73,7 +74,7 @@ section {
     max-height: 579px;
   }
 }
-      .cases-section {
+        .cases-section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -110,6 +111,14 @@ section {
 
 .square .description p {
   margin: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .square .description p {
+    font-size: 14px;
+  }
 }
 
 .square .description {
@@ -151,104 +160,68 @@ section {
   background-image: url('imgs/cases/logo.png');
 }
 
-.img-1 {
-  background-image: url('imgs/cases/01_Alphaville Burle Marx_4.png');
-}
 
-.img-2 {
-  background-image: url('imgs/cases/02_Alphaville Jacuhy_1.png');
-}
-
-.img-3 {
-  background-image: url('imgs/cases/03_Alphaville Barra da Tijuca_8.png');
-}
-      .tk-footer-wrapper {
-  background-color: #4DBD99;
-
-  background-image: url("imgs/footer.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
-}
-
-.tk-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-}
-
-@media (min-width: 992px) {
-  .tk-footer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 96px 24px;
-    padding-top: 136px;
+  .img-1 {
+    background-image: url("imgs/cases/01_Alphaville Burle Marx_4_bx.jpg");
   }
-}
 
-.footer-logo {
-  display: block;
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin: 32px 0;
-}
-
-@media (min-width: 992px) {
-  .footer-logo {
-    margin: 0;
+  .img-2 {
+    background-image: url("imgs/cases/02_Alphaville Jacuhy_1_bx.jpg");
   }
-}
 
-@media (min-width: 992px) {
-  .address-n-contact-wrapper {
-    display: flex;
-    align-items: center;
+  .img-3 {
+    background-image: url("imgs/cases/03_Alphaville Barra da Tijuca_8_bx.jpg");
   }
-}
 
-.tk-footer .address-wrapper {
-  margin-bottom: 24px;
-}
-
-@media (min-width: 992px) {
-  .tk-footer .address-wrapper {
-    margin-bottom: 0;
-    padding-right: 32px;
-    border-right: 1px solid white;
+  .img-4 {
+    background-image: url("imgs/cases/04_Alphaville Jacuhy_IMG_0179_bx.jpg");
   }
-}
 
-.tk-footer h3 {
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: bold;
-  color: white;
-}
-
-.tk-footer .contact {
-  font-size: 16px;
-  line-height: 1;
-  color: white;
-  margin-bottom: 16px;
-}
-
-.tk-footer a.email {
-  font-size: 16px;
-  line-height: 18px;
-  color: white;
-}
-
-@media (min-width: 992px) {
-  .social-contacts {
-    margin-left: 32px;
+  .img-5 {
+    background-image: url("imgs/cases/05_Alphaville Jacuhy_IMG_0470_bx.jpg");
   }
-}
 
-.tk-footer .social-contacts a {
-  margin-right: 8px;
-}
-      .tk-modal {
+  .img-6 {
+    background-image: url("imgs/cases/06_Dona Carolina_4_bx.jpg");
+  }
+
+  .img-7 {
+    background-image: url("imgs/cases/07_City Parque Itu_7_bx.jpg");
+  }
+
+  .img-8 {
+    background-image: url("imgs/cases/08_Jardins da Cidade_5_bx.jpg");
+  }
+
+  .img-9 {
+    background-image: url("imgs/cases/09_Traços da Cidade_3_bx.jpg");
+  }
+
+  .img-10 {
+    background-image: url("imgs/cases/10_Camaçari_BA_4_bx.jpg");
+  }
+
+  .img-11 {
+    background-image: url("imgs/cases/11_Guarapari_ES_12_bx.jpg");
+  }
+
+  .img-12 {
+    background-image: url("imgs/cases/12_Macapá_AP_2_bx.jpg");
+  }
+
+  .img-13 {
+    background-image: url("imgs/cases/13_Campina Grande_bx.jpg");
+  }
+
+  .img-14 {
+    background-image: url("imgs/cases/14_Macapá_AP_7_bx.jpg");
+  }
+
+  .img-15 {
+    background-image: url("imgs/cases/15_PROFISSIONAIS 2017_DJI_0109 ok_bx.jpg");
+  }
+
+        .tk-modal {
   display: none;
   position: fixed;
   z-index: 1050;
@@ -269,19 +242,20 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 0 40px;
   cursor: pointer;
+  background-color: black;
+  margin-top: -33px;
 }
 
 .tk-btn.left {
   background-image: url('imgs/left.png');
-  left: 0;
+  left: 16px;
   top: 50%;
 }
 
 .tk-btn.right {
   background-image: url('imgs/right.png');
-  right: 0;
+  right: 16px;
   top: 50%;
 }
 
@@ -314,11 +288,13 @@ section {
 .tk-modal-content img {
   width: 700px;
   max-width: 100%;
+  padding: 0 16px;
 }
 
 .tk-modal-content .description {
   margin-top: 8px;
   width: 100%;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
 }
@@ -328,6 +304,7 @@ section {
   font-size: 12px;
   line-height: 14px;
 }
+      
     </style>
   </head>
 
@@ -344,21 +321,62 @@ section {
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2 active">
-          <a class="nav-link" href="#">QUEM SOMOS</a>
-        </li>
-        <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
-          <a class="nav-link" href="#">ATUAÇÃO</a>
-        </li>
-        <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
-          <a class="nav-link" href="#gsm-cases">CASES</a>
-        </li>
-        <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
-          <a class="nav-link" href="#gsm-products">PRODUTOS</a>
-        </li>
-        <li class="nav-item mx-auto mx-sm-auto my-2 mx-sm-2">
-          <a class="nav-link" href="#">CONTATO</a>
-        </li>
+        
+          <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
+            <a
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              class="nav-link"
+              href="#gsm-quem-somos"
+            >
+              QUEM SOMOS
+            </a>
+          </li>
+        
+          <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
+            <a
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              class="nav-link"
+              href="#gsm-atuacao"
+            >
+              ATUAÇÃO
+            </a>
+          </li>
+        
+          <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
+            <a
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              class="nav-link"
+              href="#gsm-cases"
+            >
+              CASES
+            </a>
+          </li>
+        
+          <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
+            <a
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              class="nav-link"
+              href="#gsm-products"
+            >
+              PRODUTOS
+            </a>
+          </li>
+        
+          <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
+            <a
+              data-toggle="collapse"
+              data-target=".navbar-collapse.show"
+              class="nav-link"
+              href="#gsm-contatos"
+            >
+              CONTATO
+            </a>
+          </li>
+        
       </ul>
     </div>
   </div>
@@ -368,7 +386,7 @@ section {
     <div class="hero-bg"></div>
   </div>
 </div>
-      <section id="gms-cases" class="container">
+      <section id="gsm-cases" class="container">
   <div class="row">
     <div class="col-12">
       <div class="section-header">
@@ -379,206 +397,237 @@ section {
     <div class="col-12">
       <!-- Start of cases section -->
       <div class="cases-section">
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-            <div class="description" onclick="openModalImg(0);">
-              <span class="detail"></span>
-              <p>Alphaville<br />burle marx</p>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-1"></div>
+              <div class="description" onclick="openModalImg(1);">
+                <span class="detail"></span>
+                <p>Alphaville<br />burle marx</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-2"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-2"></div>
+              <div class="description" onclick="openModalImg(2);">
+                <span class="detail"></span>
+                <p>Alphaville<br />Jacuhy</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-3"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-3"></div>
+              <div class="description" onclick="openModalImg(3);">
+                <span class="detail"></span>
+                <p>Alphaville<br />Barra da Tijuca</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-4"></div>
+              <div class="description" onclick="openModalImg(4);">
+                <span class="detail"></span>
+                <p>Alphaville<br />Jacuhy</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-5"></div>
+              <div class="description" onclick="openModalImg(5);">
+                <span class="detail"></span>
+                <p>Alphaville<br />Jacuhy</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-6"></div>
+              <div class="description" onclick="openModalImg(6);">
+                <span class="detail"></span>
+                <p>Dona<br />Carolina</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-7"></div>
+              <div class="description" onclick="openModalImg(7);">
+                <span class="detail"></span>
+                <p>City<br />Parque Itu</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-8"></div>
+              <div class="description" onclick="openModalImg(8);">
+                <span class="detail"></span>
+                <p>Jardins<br />da Cidade</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-9"></div>
+              <div class="description" onclick="openModalImg(9);">
+                <span class="detail"></span>
+                <p>Traços<br />da Cidade</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-10"></div>
+              <div class="description" onclick="openModalImg(10);">
+                <span class="detail"></span>
+                <p>Camaçari<br />(BA)</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-11"></div>
+              <div class="description" onclick="openModalImg(11);">
+                <span class="detail"></span>
+                <p>Guarapari<br />(ES)</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-12"></div>
+              <div class="description" onclick="openModalImg(12);">
+                <span class="detail"></span>
+                <p>Macapá<br />(AP)</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-13"></div>
+              <div class="description" onclick="openModalImg(13);">
+                <span class="detail"></span>
+                <p>Campina<br />Grande</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-14"></div>
+              <div class="description" onclick="openModalImg(14);">
+                <span class="detail"></span>
+                <p>Macapá<br />(AP)</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
+        
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-15"></div>
+              <div class="description" onclick="openModalImg(15);">
+                <span class="detail"></span>
+                <p>Profissionais<br />2017</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
+        
       </div>
       <!-- End of cases section -->
     </div>
   </div>
 </section>
-      <div class="tk-footer-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="tk-footer">
-          <img class="footer-logo" src="imgs/logo_footer.png" />
-          <div class="address-n-contact-wrapper">
-            <div class="address-wrapper">
-              <h3>CONTATO</h3>
-              <p class="contact">
-                Rua Sebastião Lanva, 317<br/>
-                CEP 13805-027 - Mogi Mirim/SP
-              </p>
-              <p class="contact">
-                +55 11 5096-4265
-              </p>
-              <a class="email">
-                contato@silveiramarques.com
-              </a>
-            </div>
-            <div class="social-contacts">
-              
-                <a href="#">
-                  <img src="imgs/btn_facebook.png" />
-                </a>
-              
-                <a href="#">
-                  <img src="imgs/btn_instagram.png" />
-                </a>
-              
-                <a href="#">
-                  <img src="imgs/btn_linkedin.png" />
-                </a>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
       <div id="imgModal" class="tk-modal">
   <span class="tk-close" onclick="closeModalImg();"></span>
   <span class="tk-btn left" onclick="goLeft();"></span>
@@ -593,22 +642,90 @@ section {
 </div>
     
 
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
-      let currModalImgIdx = 0;
-const images = [
-  {
-    src: 'imgs/products/1.png',
-    description: 'Nome do projeto',
-  },
-  {
-    src: 'imgs/cases/02_Alphaville Jacuhy_1.png',
-    description: 'Nome do projeto',
-  },
-  {
-    src: 'imgs/cases/03_Alphaville Barra da Tijuca_8.png',
-    description: 'Nome do projeto',
-  }
-];
+      
+        let currModalImgIdx = 0;
+
+const caseImages = [];
+
+  caseImages.push({
+    "src": "imgs/cases/01_Alphaville Burle Marx_4.jpg",
+    "description": "Alphaville - Burle Marx",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/02_Alphaville Jacuhy_1.jpg",
+    "description": "Alphaville - Jacuhy 1",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/03_Alphaville Barra da Tijuca_8.jpg",
+    "description": "Alphaville - Barra da Tijuca",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/04_Alphaville Jacuhy_IMG_0179.jpg",
+    "description": "Alphaville - Jacuhy 2",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/05_Alphaville Jacuhy_IMG_0470.jpg",
+    "description": "Alphaville - Jacuhy 3",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/06_Dona Carolina_4.jpg",
+    "description": "Dona Carolina",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/07_City Parque Itu_7.jpg",
+    "description": "City Parque Itu",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/08_Jardins da Cidade_5.jpg",
+    "description": "Jardins da Cidade",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/09_Traços da Cidade_3.jpg",
+    "description": "Traços da Cidade",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/10_Camaçari_BA_4.jpg",
+    "description": "Camaçari (BA)",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/11_Guarapari_ES_12.jpg",
+    "description": "Guarapari (ES)",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/12_Macapá_AP_2.jpg",
+    "description": "Macapá (AP) 1",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/13_Campina Grande.jpg",
+    "description": "Campina Grande",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/14_Macapá_AP_7.jpg",
+    "description": "Macapá (AP) 2",
+  });
+
+  caseImages.push({
+    "src": "imgs/cases/15_PROFISSIONAIS 2017_DJI_0109 ok.jpg",
+    "description": "Profissionais 2017",
+  });
+
 
 function openImg(img) {
   var expandImg = document.getElementById("expandedImg");
@@ -621,12 +738,12 @@ function closeModalImg() {
 }
 
 function goRight() {
-  currModalImgIdx = (currModalImgIdx + 1)%(images.length);
+  currModalImgIdx = (currModalImgIdx + 1)%(caseImages.length);
   selectImage();
 }
 
 function goLeft() {
-  currModalImgIdx = (currModalImgIdx - 1 + images.length)%(images.length);
+  currModalImgIdx = (currModalImgIdx - 1 + caseImages.length)%(caseImages.length);
   selectImage();
 }
 
@@ -635,14 +752,14 @@ function selectImage() {
   const projectName = document.getElementById("projectName");
   const counter = document.getElementById("counter");
 
-  imgInModal.src = images[currModalImgIdx].src;
-  projectName.textContent = images[currModalImgIdx].description;
-  counter.textContent = `${currModalImgIdx+1} de ${images.length}`;
+  imgInModal.src = caseImages[currModalImgIdx].src;
+  projectName.textContent = caseImages[currModalImgIdx].description;
+  counter.textContent = `${currModalImgIdx+1} de ${caseImages.length}`;
 }
 
 function openModalImg(imgIndex) {
   const modal = document.getElementById("imgModal");
-  currModalImgIdx = imgIndex;
+  currModalImgIdx = imgIndex - 1;
   selectImage();
   modal.style.display = "block";
 }
@@ -658,10 +775,24 @@ function checkKey(e) {
 }
 
 document.onkeydown = checkKey;
-    </script>
+        $(document).ready(function(){
+  $("a").on('click', function(event) {
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 77
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+      
+    </script>
   </body>
 </html>

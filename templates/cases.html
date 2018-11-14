@@ -1,4 +1,4 @@
-<section id="gms-cases" class="container">
+<section id="gsm-cases" class="container">
   <div class="row">
     <div class="col-12">
       <div class="section-header">
@@ -9,160 +9,22 @@
     <div class="col-12">
       <!-- Start of cases section -->
       <div class="cases-section">
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-            <div class="description" onclick="openModalImg(0);">
-              <span class="detail"></span>
-              <p>Alphaville<br />burle marx</p>
+        {% for case in data["cases"] %}
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-{{ loop.index }}"></div>
+              <div class="description" onclick="openModalImg({{ loop.index }});">
+                <span class="detail"></span>
+                <p>{{ case["label"] }}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
+          <div class="cases-col">
+            <div class="square">
+              <div class="case-img img-logo"></div>
+            </div>
           </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-2"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-3"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-1"></div>
-          </div>
-        </div>
-        <div class="cases-col">
-          <div class="square">
-            <div class="case-img img-logo"></div>
-          </div>
-        </div>
+        {% endfor %}
       </div>
       <!-- End of cases section -->
     </div>

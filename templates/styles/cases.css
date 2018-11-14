@@ -35,6 +35,14 @@
 
 .square .description p {
   margin: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .square .description p {
+    font-size: 14px;
+  }
 }
 
 .square .description {
@@ -76,14 +84,8 @@
   background-image: url('imgs/cases/logo.png');
 }
 
-.img-1 {
-  background-image: url('imgs/cases/01_Alphaville Burle Marx_4.png');
-}
-
-.img-2 {
-  background-image: url('imgs/cases/02_Alphaville Jacuhy_1.png');
-}
-
-.img-3 {
-  background-image: url('imgs/cases/03_Alphaville Barra da Tijuca_8.png');
-}
+{% for case in data["cases"] %}
+  .img-{{ loop.index }} {
+    background-image: url("imgs/cases/{{ case['thumb'] }}");
+  }
+{% endfor %}

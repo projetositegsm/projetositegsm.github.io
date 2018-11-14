@@ -19,19 +19,20 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 0 40px;
   cursor: pointer;
+  background-color: black;
+  margin-top: -33px;
 }
 
 .tk-btn.left {
   background-image: url('imgs/left.png');
-  left: 0;
+  left: 16px;
   top: 50%;
 }
 
 .tk-btn.right {
   background-image: url('imgs/right.png');
-  right: 0;
+  right: 16px;
   top: 50%;
 }
 
@@ -64,11 +65,13 @@
 .tk-modal-content img {
   width: 700px;
   max-width: 100%;
+  padding: 0 16px;
 }
 
 .tk-modal-content .description {
   margin-top: 8px;
   width: 100%;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
 }

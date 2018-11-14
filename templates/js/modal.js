@@ -1,18 +1,12 @@
 let currModalImgIdx = 0;
-const images = [
-  {
-    src: 'imgs/products/1.png',
-    description: 'Nome do projeto',
-  },
-  {
-    src: 'imgs/cases/02_Alphaville Jacuhy_1.png',
-    description: 'Nome do projeto',
-  },
-  {
-    src: 'imgs/cases/03_Alphaville Barra da Tijuca_8.png',
-    description: 'Nome do projeto',
-  }
-];
+
+const caseImages = [];
+{% for case in data["cases"] %}
+  caseImages.push({
+    "src": "imgs/cases/{{ case['img'] }}",
+    "description": "{{ case['description'] }}",
+  });
+{% endfor %}
 
 function openImg(img) {
   var expandImg = document.getElementById("expandedImg");
@@ -25,12 +19,12 @@ function closeModalImg() {
 }
 
 function goRight() {
-  currModalImgIdx = (currModalImgIdx + 1)%(images.length);
+  currModalImgIdx = (currModalImgIdx + 1)%(caseImages.length);
   selectImage();
 }
 
 function goLeft() {
-  currModalImgIdx = (currModalImgIdx - 1 + images.length)%(images.length);
+  currModalImgIdx = (currModalImgIdx - 1 + caseImages.length)%(caseImages.length);
   selectImage();
 }
 
@@ -39,14 +33,14 @@ function selectImage() {
   const projectName = document.getElementById("projectName");
   const counter = document.getElementById("counter");
 
-  imgInModal.src = images[currModalImgIdx].src;
-  projectName.textContent = images[currModalImgIdx].description;
-  counter.textContent = `${currModalImgIdx+1} de ${images.length}`;
+  imgInModal.src = caseImages[currModalImgIdx].src;
+  projectName.textContent = caseImages[currModalImgIdx].description;
+  counter.textContent = `${currModalImgIdx+1} de ${caseImages.length}`;
 }
 
 function openModalImg(imgIndex) {
   const modal = document.getElementById("imgModal");
-  currModalImgIdx = imgIndex;
+  currModalImgIdx = imgIndex - 1;
   selectImage();
   modal.style.display = "block";
 }
