@@ -21,6 +21,7 @@
 
 section {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 /* Section general */
@@ -220,6 +221,94 @@ section {
   .img-15 {
     background-image: url("imgs/cases/15_PROFISSIONAIS 2017_DJI_0109 ok_bx.jpg");
   }
+
+        .tk-footer-wrapper {
+  /* background-color: #4DBD99; */
+
+  background-image: url("imgs/footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+
+.tk-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .tk-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 96px 24px;
+    padding-top: 136px;
+  }
+}
+
+.footer-logo {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 32px 0;
+}
+
+@media (min-width: 992px) {
+  .footer-logo {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .address-n-contact-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.tk-footer .address-wrapper {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 992px) {
+  .tk-footer .address-wrapper {
+    margin-bottom: 0;
+    padding-right: 32px;
+    border-right: 1px solid white;
+  }
+}
+
+.tk-footer h3 {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: bold;
+  color: white;
+}
+
+.tk-footer .contact {
+  font-size: 16px;
+  line-height: 1;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.tk-footer a.email {
+  font-size: 16px;
+  line-height: 18px;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .social-contacts {
+    margin-left: 32px;
+  }
+}
+
+.tk-footer .social-contacts a {
+  margin-right: 8px;
+}
 
         .tk-modal {
   display: none;
@@ -628,6 +717,48 @@ section {
     </div>
   </div>
 </section>
+      <div id="gsm-contatos" class="tk-footer-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="tk-footer">
+          <img class="footer-logo" src="imgs/logo_footer.png" />
+          <div class="address-n-contact-wrapper">
+            <div class="address-wrapper">
+              <h3>CONTATO</h3>
+              <p class="contact">
+                Rua Sebastião Lanva, 317<br/>
+                CEP 13805-027 - Mogi Mirim/SP
+              </p>
+              <p class="contact">
+                +55 11 5096-4265
+              </p>
+              <a class="email">
+                contato@silveiramarques.com
+              </a>
+            </div>
+            <div class="social-contacts">
+              
+                <a href="#">
+                  <img src="imgs/btn_facebook.png" />
+                </a>
+              
+                <a href="#">
+                  <img src="imgs/btn_instagram.png" />
+                </a>
+              
+                <a href="#">
+                  <img src="imgs/btn_linkedin.png" />
+                </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       <div id="imgModal" class="tk-modal">
   <span class="tk-close" onclick="closeModalImg();"></span>
   <span class="tk-btn left" onclick="goLeft();"></span>

@@ -1,5 +1,5 @@
 .tk-footer-wrapper {
-  background-color: #4DBD99;
+  /* background-color: #4DBD99; */
 
   background-image: url("imgs/footer.png");
   background-repeat: no-repeat;
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   padding: 24px;
+  align-items: center;
 }
 
 @media (min-width: 992px) {
