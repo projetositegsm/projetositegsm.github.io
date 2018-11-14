@@ -66,14 +66,14 @@ data = {
             "description": "Jardins da Cidade",
         },
         {
-            "thumb": "09_Trac\u0327os da Cidade_3_bx.jpg",
-            "img": "09_Trac\u0327os da Cidade_3.jpg",
+            "thumb": "09_Tracos da Cidade_3_bx.jpg",
+            "img": "09_Tracos da Cidade_3.jpg",
             "label": "Traços<br />da Cidade",
             "description": "Traços da Cidade",
         },
         {
-            "thumb": "10_Camac\u0327ari_BA_4_bx.jpg",
-            "img": "10_Camac\u0327ari_BA_4.jpg",
+            "thumb": "10_Camacari_BA_4_bx.jpg",
+            "img": "10_Camacari_BA_4.jpg",
             "label": "Camaçari<br />(BA)",
             "description": "Camaçari (BA)",
         },
@@ -84,8 +84,8 @@ data = {
             "description": "Guarapari (ES)",
         },
         {
-            "thumb": "12_Macapa\u0301_AP_2_bx.jpg",
-            "img": "12_Macapa\u0301_AP_2.jpg",
+            "thumb": "12_Macapa_AP_2_bx.jpg",
+            "img": "12_Macapa_AP_2.jpg",
             "label": "Macapá<br />(AP)",
             "description": "Macapá (AP) 1",
         },
@@ -96,8 +96,8 @@ data = {
             "description": "Campina Grande",
         },
         {
-            "thumb": "14_Macapa\u0301_AP_7_bx.jpg",
-            "img": "14_Macapa\u0301_AP_7.jpg",
+            "thumb": "14_Macapa_AP_7_bx.jpg",
+            "img": "14_Macapa_AP_7.jpg",
             "label": "Macapá<br />(AP)",
             "description": "Macapá (AP) 2"
         },
