@@ -21,7 +21,6 @@
 
 section {
   margin-top: 80px;
-  margin-bottom: 80px;
 }
 
 /* Section general */
@@ -222,8 +221,94 @@ section {
     background-image: url("imgs/cases/15_PROFISSIONAIS 2017_DJI_0109 ok_bx.jpg");
   }
 
+        .products-bg {
+  background-image: linear-gradient(
+    to bottom,
+    #FFFFFF,
+    #FFFFFF 30%,
+    #4DBD99 30%,
+    #4DBD99
+  );
+}
+
+.product-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  margin-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+  .product-card {
+    flex-direction: row;
+  }
+}
+
+.product-card .expanded-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .product-card .section {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+.thumbnail-col {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.thumbnail-col img {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px 0 0;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.thumbnail-col img:hover {
+  opacity: 1;
+}
+
+.thumbnails-row {
+  display: flex;
+}
+
+.product-card .product-description {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+@media (min-width: 992px) {
+  .product-card .product-description {
+    padding: 40px;
+  }
+}
+
+.product-card .product-description .title h3 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  color: #4C4C4C;
+}
+
+.product-card .product-description .title p {
+  font-size: 20px;
+  line-height: 23px;
+  color: #4C4C4C;
+  text-align: center;
+}
         .tk-footer-wrapper {
-  /* background-color: #4DBD99; */
+  background-color: #4DBD99;
 
   background-image: url("imgs/footer.png");
   background-repeat: no-repeat;
@@ -717,6 +802,147 @@ section {
     </div>
   </div>
 </section>
+      <div class="products-bg">
+  <section id="gsm-products" class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-header">
+          <h2>Produtos</h1>
+          <p>Conheça nossos produtos</p>
+        </div>
+      </div>
+      <div class="col-12">
+        
+          <div class="product-card">
+            <div class="section product-images">
+              <img
+                id="expandedImg-0"
+                src="imgs/products/1.png"
+                class="expanded-img"
+              />
+              <div class="thumbnails-row">
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/1.png"
+                      onclick="makeImageExpanded(this, 0)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/1.png"
+                      onclick="makeImageExpanded(this, 1)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/1.png"
+                      onclick="makeImageExpanded(this, 2)"
+                    />
+                  </div>
+                
+              </div>
+            </div>
+            <div class="section product-description">
+              <div class="title">
+                <h3>Portal San Giovanni</h3>
+                <p>Itatiba - SP</p>
+              </div>
+              <div class="description">
+                <ul>
+                  
+                    <li>
+                      Entrega em novembro de 2019
+                    </li>
+                  
+                    <li>
+                      3 suítes com mezanino | 2 vagas para auto
+                    </li>
+                  
+                    <li>
+                      Estar | escritório reversível
+                    </li>
+                  
+                    <li>
+                      Jantar e cozinha integrados com área de lazer
+                    </li>
+                  
+                    <li>
+                      Terreno: 380m2 | Casa: 300m2
+                    </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="section product-images">
+              <img
+                id="expandedImg-1"
+                src="imgs/products/1.png"
+                class="expanded-img"
+              />
+              <div class="thumbnails-row">
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/1.png"
+                      onclick="makeImageExpanded(this, 0)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/1.png"
+                      onclick="makeImageExpanded(this, 1)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/1.png"
+                      onclick="makeImageExpanded(this, 2)"
+                    />
+                  </div>
+                
+              </div>
+            </div>
+            <div class="section product-description">
+              <div class="title">
+                <h3>Parque da Imprensa</h3>
+                <p>Mogi Mirim - SP</p>
+              </div>
+              <div class="description">
+                <ul>
+                  
+                    <li>
+                      Finalizado | pronta entrega
+                    </li>
+                  
+                    <li>
+                      3 dormitórios sendo 1 suíte | 2 vagas para auto
+                    </li>
+                  
+                    <li>
+                      TV | Jantar e cozinha integrados com área de lazer
+                    </li>
+                  
+                    <li>
+                      Terreno: 300m2 | Casa: 155m2
+                    </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+</div>
       <div id="gsm-contatos" class="tk-footer-wrapper">
   <div class="container">
     <div class="row">
@@ -858,11 +1084,6 @@ const caseImages = [];
   });
 
 
-function openImg(img) {
-  var expandImg = document.getElementById("expandedImg");
-  expandImg.src = img.src;
-}
-
 function closeModalImg() {
   const modal = document.getElementById("imgModal");
   modal.style.display = "none";
@@ -923,6 +1144,10 @@ document.onkeydown = checkKey;
     }
   });
 });
+        function makeImageExpanded(img, carouselIdx) {
+  var expandedImg = document.getElementById(`expandedImg-${carouselIdx}`);
+  expandedImg.src = img.src;
+}
       
     </script>
   </body>

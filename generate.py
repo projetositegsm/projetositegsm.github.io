@@ -4,6 +4,37 @@ env = Environment(loader=FileSystemLoader("templates"))
 template = env.get_template("index.html")
 
 data = {
+    "products": [
+        {
+            "title": "Portal San Giovanni",
+            "location": "Itatiba - SP",
+            "firstImg": "imgs/products/1.png",
+            "imageSrcs": ["imgs/products/1.png", "imgs/products/1.png", "imgs/products/1.png"],
+            "description": {
+                "list": [
+                    "Entrega em novembro de 2019",
+                    "3 suítes com mezanino | 2 vagas para auto",
+                    "Estar | escritório reversível",
+                    "Jantar e cozinha integrados com área de lazer",
+                    "Terreno: 380m2 | Casa: 300m2",
+                ]
+            }
+        },
+        {
+            "title": "Parque da Imprensa",
+            "location": "Mogi Mirim - SP",
+            "firstImg": "imgs/products/1.png",
+            "imageSrcs": ["imgs/products/1.png", "imgs/products/1.png", "imgs/products/1.png"],
+            "description": {
+                "list": [
+                    "Finalizado | pronta entrega",
+                    "3 dormitórios sendo 1 suíte | 2 vagas para auto",
+                    "TV | Jantar e cozinha integrados com área de lazer",
+                    "Terreno: 300m2 | Casa: 155m2",
+                ]
+            }
+        }
+    ],
     "sections": [
         { "title": "QUEM SOMOS", "id": "gsm-quem-somos" },
         { "title": "ATUAÇÃO", "id": "gsm-atuacao" },

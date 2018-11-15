@@ -8,11 +8,6 @@ const caseImages = [];
   });
 {% endfor %}
 
-function openImg(img) {
-  var expandImg = document.getElementById("expandedImg");
-  expandImg.src = img.src;
-}
-
 function closeModalImg() {
   const modal = document.getElementById("imgModal");
   modal.style.display = "none";

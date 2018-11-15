@@ -1,5 +1,4 @@
-<div style="position: relative;">
-  <div class="products-section-bg"></div>
+<div class="products-bg">
   <section id="gsm-products" class="container">
     <div class="row">
       <div class="col-12">
@@ -9,34 +8,42 @@
         </div>
       </div>
       <div class="col-12">
-        <div class="product-card">
-          <div class="section product-images">
-            <div class="highlight-img">
-              <img id="expandedImg" style="width: 100%;" src="imgs/products/1.png" />
+        {% for product in data["products"] %}
+          <div class="product-card">
+            <div class="section product-images">
+              <img
+                id="expandedImg-{{ loop.index-1 }}"
+                src="{{ product['firstImg'] }}"
+                class="expanded-img"
+              />
+              <div class="thumbnails-row">
+                {% for imgSrc in product["imageSrcs"] %}
+                  <div class="thumbnail-col">
+                    <img
+                      src="{{ imgSrc }}"
+                      onclick="makeImageExpanded(this, {{ loop.index-1 }})"
+                    />
+                  </div>
+                {% endfor %}
+              </div>
             </div>
-            <div class="thumbnails-row">
-              <div class="thumbnail-col">
-                <img src="imgs/products/1.png" onclick="openImg(this);" />
+            <div class="section product-description">
+              <div class="title">
+                <h3>{{ product["title"] }}</h3>
+                <p>{{ product["location"] }}</p>
               </div>
-              <div class="thumbnail-col">
-                <img src="imgs/cases/01_Alphaville Burle Marx_4.png" onclick="openImg(this);" />
-              </div>
-              <div class="thumbnail-col">
-                <img src="imgs/cases/02_Alphaville Jacuhy_1.png" onclick="openImg(this);" />
+              <div class="description">
+                <ul>
+                  {% for item in product["description"]["list"] %}
+                    <li>
+                      {{ item }}
+                    </li>
+                  {% endfor %}
+                </ul>
               </div>
             </div>
           </div>
-          <div class="section product-description">
-            <div class="title">
-              <h3>Nome do Projeto</h3>
-              <p>Mogi Mirim - SP</p>
-            </div>
-            <p class="text-center">
-            Residência com 155m², 3 dormitórios com suíte.<br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt, augue sit amet egestas mattis, purus odio egestas velit, nec scelerisque erat dolor vitae massa. Etiam fringilla leo id leo dictum, ac gravida nulla commodo. Phasellus velit dolor, pulvinar vel quam in, ornare faucibus nisl.<br /><br />
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris imperdiet pharetra eros at rutrum.
-            </p>
-          </div>
+        {% endfor %}
       </div>
     </div>
   </section>
