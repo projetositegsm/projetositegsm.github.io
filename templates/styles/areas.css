@@ -1,0 +1,65 @@
+#gsm-areas .section-header.only-desktop {
+  padding-top: 50px;
+}
+
+#gsm-areas .areas-bg {
+  background-image: url("imgs/areas/areas_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 200%;
+}
+
+@media (min-width: 992px) {
+  #gsm-areas .areas-bg {
+    background-size: auto 100%;
+  }
+}
+
+#gsm-areas .icon-img {
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#gsm-areas .icon-description {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 1;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#gsm-areas .icons-wrapper {
+  margin: 0 -15px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+  #gsm-areas .icon-description {
+    margin-bottom: 200px;
+  }
+
+  #gsm-areas .icon-img {
+    margin: 120px auto 40px auto;
+  }
+}
+
+#gsm-areas .icon-col:not(:last-child) {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+#gsm-areas .icon-col:last-child {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  #gsm-areas .icon-col {
+    flex: 0 0 20% !important;
+    max-width: 20% !important;
+  }
+}

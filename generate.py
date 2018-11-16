@@ -37,7 +37,7 @@ data = {
     ],
     "sections": [
         { "title": "QUEM SOMOS", "id": "gsm-quem-somos" },
-        { "title": "ATUAÇÃO", "id": "gsm-atuacao" },
+        { "title": "ATUAÇÃO", "id": "gsm-areas" },
         { "title": "CASES", "id": "gsm-cases" },
         { "title": "PRODUTOS", "id": "gsm-products" },
         { "title": "CONTATO", "id": "gsm-contatos" },

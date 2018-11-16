@@ -15,9 +15,34 @@ section {
   color: #4DBD99;
 }
 
+.section-header .highlight {
+  font-size: 40px;
+  line-height:45px;
+}
+
 .section-header p {
   font-size: 24px;
   margin-bottom: 32px;
   line-height: 28px;
   color: #6E6E6E;
+}
+
+.only-desktop {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  .only-desktop {
+    display: block !important;
+  }
+}
+
+.only-mobile {
+  display: block !important;
+}
+
+@media (min-width: 992px) {
+  .only-mobile {
+    display: none !important;
+  }
 }

@@ -32,11 +32,36 @@ section {
   color: #4DBD99;
 }
 
+.section-header .highlight {
+  font-size: 40px;
+  line-height:45px;
+}
+
 .section-header p {
   font-size: 24px;
   margin-bottom: 32px;
   line-height: 28px;
   color: #6E6E6E;
+}
+
+.only-desktop {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  .only-desktop {
+    display: block !important;
+  }
+}
+
+.only-mobile {
+  display: block !important;
+}
+
+@media (min-width: 992px) {
+  .only-mobile {
+    display: none !important;
+  }
 }
         a.nav-link {
   font-size: 15px;
@@ -72,6 +97,71 @@ section {
 @media (min-width: 1200px) {
   .hero-bg {
     max-height: 579px;
+  }
+}
+        #gsm-areas .section-header.only-desktop {
+  padding-top: 50px;
+}
+
+#gsm-areas .areas-bg {
+  background-image: url("imgs/areas/areas_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 200%;
+}
+
+@media (min-width: 992px) {
+  #gsm-areas .areas-bg {
+    background-size: auto 100%;
+  }
+}
+
+#gsm-areas .icon-img {
+  display: block;
+  margin: 40px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#gsm-areas .icon-description {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 1;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#gsm-areas .icons-wrapper {
+  margin: 0 -15px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+  #gsm-areas .icon-description {
+    margin-bottom: 200px;
+  }
+
+  #gsm-areas .icon-img {
+    margin: 120px auto 40px auto;
+  }
+}
+
+#gsm-areas .icon-col:not(:last-child) {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+#gsm-areas .icon-col:last-child {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  #gsm-areas .icon-col {
+    flex: 0 0 20% !important;
+    max-width: 20% !important;
   }
 }
         .cases-section {
@@ -512,7 +602,7 @@ section {
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
               class="nav-link"
-              href="#gsm-atuacao"
+              href="#gsm-areas"
             >
               ATUAÇÃO
             </a>
@@ -560,6 +650,62 @@ section {
     <div class="hero-bg"></div>
   </div>
 </div>
+      <section id="gsm-areas">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-header only-mobile">
+          <h2><span class="highlight">6</span> Áreas de Atuação</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="areas-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-header only-desktop">
+            <h2><span class="highlight">6</span> Áreas de Atuação</h2>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="icons-wrapper">
+            <div class="icon-col">
+              <img src="imgs/areas/paper.png" class="icon-img" />
+              <p class="icon-description">
+                Definição do Produto e MasterPlan
+              </p>
+            </div>
+            <div class="icon-col">
+              <img src="imgs/areas/worker.png" class="icon-img" />
+              <p class="icon-description">
+                Projeto e Licenciamento
+              </p>
+            </div>
+            <div class="icon-col">
+              <img src="imgs/areas/pencil.png" class="icon-img" />
+              <p class="icon-description">
+                Gestão de Obras
+              </p>
+            </div>
+            <div class="icon-col">
+              <img src="imgs/areas/motor.png" class="icon-img" />
+              <p class="icon-description">
+                Execução de Obras
+              </p>
+            </div>
+            <div class="icon-col">
+              <img src="imgs/areas/house.png" class="icon-img" />
+              <p class="icon-description">
+                Nossos Produtos
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       <section id="gsm-cases" class="container">
   <div class="row">
     <div class="col-12">
