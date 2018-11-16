@@ -2,8 +2,8 @@
   background-image: linear-gradient(
     to bottom,
     #FFFFFF,
-    #FFFFFF 30%,
-    #4DBD99 30%,
+    #FFFFFF 15%,
+    #4DBD99 15%,
     #4DBD99
   );
 }
@@ -78,9 +78,14 @@
   color: #4C4C4C;
 }
 
-.product-card .product-description .title p {
+.product-card .product-description .localization {
   font-size: 20px;
   line-height: 23px;
   color: #4C4C4C;
+  text-align: center;
+}
+
+.product-card .product-description .status {
+  color: #4DBD99;
   text-align: center;
 }

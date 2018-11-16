@@ -17,11 +17,12 @@
                 class="expanded-img"
               />
               <div class="thumbnails-row">
+                {% set carousel_loop = loop %}
                 {% for imgSrc in product["imageSrcs"] %}
                   <div class="thumbnail-col">
                     <img
                       src="{{ imgSrc }}"
-                      onclick="makeImageExpanded(this, {{ loop.index-1 }})"
+                      onclick="makeImageExpanded(this, {{ carousel_loop.index-1 }})"
                     />
                   </div>
                 {% endfor %}
@@ -30,7 +31,8 @@
             <div class="section product-description">
               <div class="title">
                 <h3>{{ product["title"] }}</h3>
-                <p>{{ product["location"] }}</p>
+                <p class="localization">{{ product["location"] }}</p>
+                <p class="status">{{ product["status"] }}</p>
               </div>
               <div class="description">
                 <ul>

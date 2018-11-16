@@ -8,29 +8,82 @@ data = {
         {
             "title": "Portal San Giovanni",
             "location": "Itatiba - SP",
-            "firstImg": "imgs/products/1.png",
-            "imageSrcs": ["imgs/products/1.png", "imgs/products/1.png", "imgs/products/1.png"],
+            "status": "Entrega em <strong>novembro de 2019</strong>",
+            "firstImg": "imgs/products/Itatiba_01.jpg",
+            "imageSrcs": [
+                "imgs/products/Itatiba_01.jpg",
+                "imgs/products/Itatiba_02.jpg",
+                "imgs/products/Itatiba_03.jpg",
+                "imgs/products/Itatiba_04.jpg",
+                "imgs/products/Itatiba_05.jpg"
+            ],
             "description": {
                 "list": [
-                    "Entrega em novembro de 2019",
-                    "3 suítes com mezanino | 2 vagas para auto",
-                    "Estar | escritório reversível",
-                    "Jantar e cozinha integrados com área de lazer",
-                    "Terreno: 380m2 | Casa: 300m2",
+                    "<strong>3 Suítes</strong> com mezanino",
+                    "<strong>2 Vagas</strong> para auto",
+                    "<strong>Sala de estar e Escritório</strong> reversível",
+                    "<strong>Sala de Jantar e Cozinha</strong> integrados com área de lazer",
                 ]
             }
         },
         {
             "title": "Parque da Imprensa",
             "location": "Mogi Mirim - SP",
-            "firstImg": "imgs/products/1.png",
-            "imageSrcs": ["imgs/products/1.png", "imgs/products/1.png", "imgs/products/1.png"],
+            "status": "Finalizado. <strong>Pronta entrega</strong>",
+            "firstImg": "imgs/products/Mogi_01.jpg",
+            "imageSrcs": [
+                "imgs/products/Mogi_01.jpg",
+                "imgs/products/Mogi_02.jpg",
+                "imgs/products/Mogi_03.jpg",
+                "imgs/products/Mogi_04.jpg",
+                "imgs/products/Mogi_05.jpg",
+            ],
             "description": {
                 "list": [
-                    "Finalizado | pronta entrega",
-                    "3 dormitórios sendo 1 suíte | 2 vagas para auto",
-                    "TV | Jantar e cozinha integrados com área de lazer",
-                    "Terreno: 300m2 | Casa: 155m2",
+                    "<strong>3 Dormitórios</strong> (sendo 1 suíte)",
+                    "<strong>2 Vagas</strong> para auto",
+                    "<strong>TV, Sala de Jantar e Cozinha</strong> integrados com área de lazer",
+                ]
+            }
+        },
+        {
+            "title": "Alphaville Rio Costa do Sol",
+            "location": "Rio das Ostras - RJ",
+            "status": "Em desenvolvimento",
+            "firstImg": "imgs/products/Rio_02.jpg",
+            "imageSrcs": [
+                "imgs/products/Rio_02.jpg",
+                "imgs/products/Rio_03.jpg",
+                "imgs/products/Rio_04.jpg",
+                "imgs/products/Rio_05.jpg",
+            ],
+            "description": {
+                "list": [
+                    "<strong>4 Dormitórios</strong> (sendo 2 suítes) com mezanino",
+                    "<strong>2 Vagas</strong> para auto",
+                    "<strong>Escritório</strong> reversível",
+                    "<strong>Sala de Estar, TV, Sala de Jantar e Cozinha</strong> integrados com área de lazer",
+                ]
+            }
+        },
+        {
+            "title": "Alphaville Jacuhy",
+            "location": "Vitória - ES",
+            "status": "Entrega em <strong>novembro de 2019</strong>",
+            "firstImg": "imgs/products/Vitoria_01.jpg",
+            "imageSrcs": [
+                "imgs/products/Vitoria_01.jpg",
+                "imgs/products/Vitoria_02.jpg",
+                "imgs/products/Vitoria_03.jpg",
+                "imgs/products/Vitoria_04.jpg",
+                "imgs/products/Vitoria_05.jpg",
+            ],
+            "description": {
+                "list": [
+                    "<strong>4 Dormitórios</strong> (sendo 2 suítes) com mezanino",
+                    "<strong>2 Vagas</strong> para auto",
+                    "<strong>Escritório</strong> reversível",
+                    "<strong>Sala de Estar, TV, Sala de Jantar e Cozinha</strong> integrados com área de lazer",
                 ]
             }
         }

@@ -7,14 +7,48 @@
     <title>Silveira Marques Engenharia</title>
 
     <style>
-      @font-face {
-        font-family: Sansation;
-        src: url('fonts/Sansation_Regular.ttf');
-        font-style: normal;
-        font-weight: normal;
-      }
-
       
+        @font-face {
+  font-family: Sansation;
+  src: url('fonts/Sansation_Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Sansation;
+  src: url('fonts/Sansation_Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Sansation;
+  src: url('fonts/Sansation_Light.ttf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Sansation;
+  src: url('fonts/Sansation_Italic.ttf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Sansation;
+  src: url('fonts/Sansation_Bold_Italic.ttf');
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Sansation;
+  src: url('fonts/Sansation_Light_Italic.ttf');
+  font-style: italic;
+  font-weight: 300;
+}
         body {
   font-family: Sansation;
 }
@@ -315,8 +349,8 @@ section {
   background-image: linear-gradient(
     to bottom,
     #FFFFFF,
-    #FFFFFF 30%,
-    #4DBD99 30%,
+    #FFFFFF 15%,
+    #4DBD99 15%,
     #4DBD99
   );
 }
@@ -391,10 +425,15 @@ section {
   color: #4C4C4C;
 }
 
-.product-card .product-description .title p {
+.product-card .product-description .localization {
   font-size: 20px;
   line-height: 23px;
   color: #4C4C4C;
+  text-align: center;
+}
+
+.product-card .product-description .status {
+  color: #4DBD99;
   text-align: center;
 }
         .tk-footer-wrapper {
@@ -963,29 +1002,44 @@ section {
             <div class="section product-images">
               <img
                 id="expandedImg-0"
-                src="imgs/products/1.png"
+                src="imgs/products/Itatiba_01.jpg"
                 class="expanded-img"
               />
               <div class="thumbnails-row">
                 
+                
                   <div class="thumbnail-col">
                     <img
-                      src="imgs/products/1.png"
+                      src="imgs/products/Itatiba_01.jpg"
                       onclick="makeImageExpanded(this, 0)"
                     />
                   </div>
                 
                   <div class="thumbnail-col">
                     <img
-                      src="imgs/products/1.png"
-                      onclick="makeImageExpanded(this, 1)"
+                      src="imgs/products/Itatiba_02.jpg"
+                      onclick="makeImageExpanded(this, 0)"
                     />
                   </div>
                 
                   <div class="thumbnail-col">
                     <img
-                      src="imgs/products/1.png"
-                      onclick="makeImageExpanded(this, 2)"
+                      src="imgs/products/Itatiba_03.jpg"
+                      onclick="makeImageExpanded(this, 0)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Itatiba_04.jpg"
+                      onclick="makeImageExpanded(this, 0)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Itatiba_05.jpg"
+                      onclick="makeImageExpanded(this, 0)"
                     />
                   </div>
                 
@@ -994,29 +1048,26 @@ section {
             <div class="section product-description">
               <div class="title">
                 <h3>Portal San Giovanni</h3>
-                <p>Itatiba - SP</p>
+                <p class="localization">Itatiba - SP</p>
+                <p class="status">Entrega em <strong>novembro de 2019</strong></p>
               </div>
               <div class="description">
                 <ul>
                   
                     <li>
-                      Entrega em novembro de 2019
+                      <strong>3 Suítes</strong> com mezanino
                     </li>
                   
                     <li>
-                      3 suítes com mezanino | 2 vagas para auto
+                      <strong>2 Vagas</strong> para auto
                     </li>
                   
                     <li>
-                      Estar | escritório reversível
+                      <strong>Sala de estar e Escritório</strong> reversível
                     </li>
                   
                     <li>
-                      Jantar e cozinha integrados com área de lazer
-                    </li>
-                  
-                    <li>
-                      Terreno: 380m2 | Casa: 300m2
+                      <strong>Sala de Jantar e Cozinha</strong> integrados com área de lazer
                     </li>
                   
                 </ul>
@@ -1028,29 +1079,44 @@ section {
             <div class="section product-images">
               <img
                 id="expandedImg-1"
-                src="imgs/products/1.png"
+                src="imgs/products/Mogi_01.jpg"
                 class="expanded-img"
               />
               <div class="thumbnails-row">
                 
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/1.png"
-                      onclick="makeImageExpanded(this, 0)"
-                    />
-                  </div>
                 
                   <div class="thumbnail-col">
                     <img
-                      src="imgs/products/1.png"
+                      src="imgs/products/Mogi_01.jpg"
                       onclick="makeImageExpanded(this, 1)"
                     />
                   </div>
                 
                   <div class="thumbnail-col">
                     <img
-                      src="imgs/products/1.png"
-                      onclick="makeImageExpanded(this, 2)"
+                      src="imgs/products/Mogi_02.jpg"
+                      onclick="makeImageExpanded(this, 1)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Mogi_03.jpg"
+                      onclick="makeImageExpanded(this, 1)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Mogi_04.jpg"
+                      onclick="makeImageExpanded(this, 1)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Mogi_05.jpg"
+                      onclick="makeImageExpanded(this, 1)"
                     />
                   </div>
                 
@@ -1059,25 +1125,169 @@ section {
             <div class="section product-description">
               <div class="title">
                 <h3>Parque da Imprensa</h3>
-                <p>Mogi Mirim - SP</p>
+                <p class="localization">Mogi Mirim - SP</p>
+                <p class="status">Finalizado. <strong>Pronta entrega</strong></p>
               </div>
               <div class="description">
                 <ul>
                   
                     <li>
-                      Finalizado | pronta entrega
+                      <strong>3 Dormitórios</strong> (sendo 1 suíte)
                     </li>
                   
                     <li>
-                      3 dormitórios sendo 1 suíte | 2 vagas para auto
+                      <strong>2 Vagas</strong> para auto
                     </li>
                   
                     <li>
-                      TV | Jantar e cozinha integrados com área de lazer
+                      <strong>TV, Sala de Jantar e Cozinha</strong> integrados com área de lazer
+                    </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="section product-images">
+              <img
+                id="expandedImg-2"
+                src="imgs/products/Rio_02.jpg"
+                class="expanded-img"
+              />
+              <div class="thumbnails-row">
+                
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Rio_02.jpg"
+                      onclick="makeImageExpanded(this, 2)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Rio_03.jpg"
+                      onclick="makeImageExpanded(this, 2)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Rio_04.jpg"
+                      onclick="makeImageExpanded(this, 2)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Rio_05.jpg"
+                      onclick="makeImageExpanded(this, 2)"
+                    />
+                  </div>
+                
+              </div>
+            </div>
+            <div class="section product-description">
+              <div class="title">
+                <h3>Alphaville Rio Costa do Sol</h3>
+                <p class="localization">Rio das Ostras - RJ</p>
+                <p class="status">Em desenvolvimento</p>
+              </div>
+              <div class="description">
+                <ul>
+                  
+                    <li>
+                      <strong>4 Dormitórios</strong> (sendo 2 suítes) com mezanino
                     </li>
                   
                     <li>
-                      Terreno: 300m2 | Casa: 155m2
+                      <strong>2 Vagas</strong> para auto
+                    </li>
+                  
+                    <li>
+                      <strong>Escritório</strong> reversível
+                    </li>
+                  
+                    <li>
+                      <strong>Sala de Estar, TV, Sala de Jantar e Cozinha</strong> integrados com área de lazer
+                    </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="section product-images">
+              <img
+                id="expandedImg-3"
+                src="imgs/products/Vitoria_01.jpg"
+                class="expanded-img"
+              />
+              <div class="thumbnails-row">
+                
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Vitoria_01.jpg"
+                      onclick="makeImageExpanded(this, 3)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Vitoria_02.jpg"
+                      onclick="makeImageExpanded(this, 3)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Vitoria_03.jpg"
+                      onclick="makeImageExpanded(this, 3)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Vitoria_04.jpg"
+                      onclick="makeImageExpanded(this, 3)"
+                    />
+                  </div>
+                
+                  <div class="thumbnail-col">
+                    <img
+                      src="imgs/products/Vitoria_05.jpg"
+                      onclick="makeImageExpanded(this, 3)"
+                    />
+                  </div>
+                
+              </div>
+            </div>
+            <div class="section product-description">
+              <div class="title">
+                <h3>Alphaville Jacuhy</h3>
+                <p class="localization">Vitória - ES</p>
+                <p class="status">Entrega em <strong>novembro de 2019</strong></p>
+              </div>
+              <div class="description">
+                <ul>
+                  
+                    <li>
+                      <strong>4 Dormitórios</strong> (sendo 2 suítes) com mezanino
+                    </li>
+                  
+                    <li>
+                      <strong>2 Vagas</strong> para auto
+                    </li>
+                  
+                    <li>
+                      <strong>Escritório</strong> reversível
+                    </li>
+                  
+                    <li>
+                      <strong>Sala de Estar, TV, Sala de Jantar e Cozinha</strong> integrados com área de lazer
                     </li>
                   
                 </ul>
