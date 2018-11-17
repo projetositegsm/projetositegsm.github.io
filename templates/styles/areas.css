@@ -2,6 +2,10 @@
   padding-top: 50px;
 }
 
+#gsm-areas .section-header.only-mobile {
+  margin-bottom: 32px;
+}
+
 #gsm-areas .areas-bg {
   background-image: url("imgs/areas/areas_bg.png");
   background-repeat: no-repeat;

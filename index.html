@@ -24,13 +24,6 @@
 
 @font-face {
   font-family: Sansation;
-  src: url('fonts/Sansation_Light.ttf');
-  font-style: normal;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: Sansation;
   src: url('fonts/Sansation_Italic.ttf');
   font-style: italic;
   font-weight: 400;
@@ -41,13 +34,6 @@
   src: url('fonts/Sansation_Bold_Italic.ttf');
   font-style: italic;
   font-weight: 700;
-}
-
-@font-face {
-  font-family: Sansation;
-  src: url('fonts/Sansation_Light_Italic.ttf');
-  font-style: italic;
-  font-weight: 300;
 }
         body {
   font-family: Sansation;
@@ -67,8 +53,8 @@ section {
 }
 
 .section-header .highlight {
-  font-size: 40px;
-  line-height:45px;
+  font-size: 60px;
+  line-height:60px;
 }
 
 .section-header p {
@@ -135,6 +121,10 @@ section {
 }
         #gsm-areas .section-header.only-desktop {
   padding-top: 50px;
+}
+
+#gsm-areas .section-header.only-mobile {
+  margin-bottom: 32px;
 }
 
 #gsm-areas .areas-bg {
@@ -393,9 +383,13 @@ section {
 .thumbnail-col img {
   width: 100%;
   height: auto;
-  padding: 20px 20px 0 0;
+  padding: 8px 8px 0 0;
   opacity: 0.8;
   cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  padding: 20px 20px 0 0;
 }
 
 .thumbnail-col img:hover {
@@ -444,6 +438,16 @@ section {
 .product-card .product-description .status {
   color: #4DBD99;
   text-align: center;
+}
+
+.product-card .product-description .additional-details {
+  margin-top: 16px;
+}
+
+@media (min-width: 992px) {
+  .product-card .product-description .additional-details {
+    margin-top: 0;
+  }
 }
 
 .product-card .product-description .additional-details .area-description {
@@ -718,7 +722,7 @@ section {
     <div class="row">
       <div class="col-12">
         <div class="section-header only-mobile">
-          <h2><span class="highlight">6</span> Áreas de Atuação</h2>
+          <h2><span class="highlight">5</span> Áreas de Atuação</h2>
         </div>
       </div>
     </div>
@@ -728,7 +732,7 @@ section {
       <div class="row">
         <div class="col-12">
           <div class="section-header only-desktop">
-            <h2><span class="highlight">6</span> Áreas de Atuação</h2>
+            <h2><span class="highlight">5</span> Áreas de Atuação</h2>
           </div>
         </div>
         <div class="col-12">
@@ -736,31 +740,31 @@ section {
             <div class="icon-col">
               <img src="imgs/areas/paper.png" class="icon-img" />
               <p class="icon-description">
-                Definição do Produto e MasterPlan
+                <strong>Definição</strong><br />do Produto e<br />MasterPlan
               </p>
             </div>
             <div class="icon-col">
               <img src="imgs/areas/worker.png" class="icon-img" />
               <p class="icon-description">
-                Projeto e Licenciamento
+                <strong>Projeto</strong> e<br /><strong>Licenciamento</strong>
               </p>
             </div>
             <div class="icon-col">
               <img src="imgs/areas/pencil.png" class="icon-img" />
               <p class="icon-description">
-                Gestão de Obras
+                <strong>Gestão</strong><br />de Obras
               </p>
             </div>
             <div class="icon-col">
               <img src="imgs/areas/motor.png" class="icon-img" />
               <p class="icon-description">
-                Execução de Obras
+                <strong>Execução</strong><br />de Obras
               </p>
             </div>
             <div class="icon-col">
               <img src="imgs/areas/house.png" class="icon-img" />
               <p class="icon-description">
-                Nossos Produtos
+                Nossos<br /><strong>Produtos</strong>
               </p>
             </div>
           </div>

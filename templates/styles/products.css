@@ -45,9 +45,13 @@
 .thumbnail-col img {
   width: 100%;
   height: auto;
-  padding: 20px 20px 0 0;
+  padding: 8px 8px 0 0;
   opacity: 0.8;
   cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  padding: 20px 20px 0 0;
 }
 
 .thumbnail-col img:hover {
@@ -96,6 +100,16 @@
 .product-card .product-description .status {
   color: #4DBD99;
   text-align: center;
+}
+
+.product-card .product-description .additional-details {
+  margin-top: 16px;
+}
+
+@media (min-width: 992px) {
+  .product-card .product-description .additional-details {
+    margin-top: 0;
+  }
 }
 
 .product-card .product-description .additional-details .area-description {
