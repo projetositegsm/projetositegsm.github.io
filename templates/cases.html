@@ -13,11 +13,10 @@
           <a
             class="cases-col"
             href="javascript:void(0);"
-            onclick="openModalImg({{ loop.index }});"
           >
             <div class="square">
               <div class="case-img img-{{ loop.index }}"></div>
-              <div class="description" >
+              <div class="description" onclick="openModalImg({{ loop.index }});">
                 <span class="detail"></span>
                 <p>{{ case["label"] }}</p>
               </div>
