@@ -61,6 +61,7 @@
 .product-card .product-description {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding-top: 40px;
 }
 
@@ -78,6 +79,13 @@
   color: #4C4C4C;
 }
 
+.product-card .product-description .description-list ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
 .product-card .product-description .localization {
   font-size: 20px;
   line-height: 23px;
@@ -87,5 +95,15 @@
 
 .product-card .product-description .status {
   color: #4DBD99;
+  text-align: center;
+}
+
+.product-card .product-description .additional-details .area-description {
+  color: #4DBD99;
+  text-align: center;
+}
+
+.product-card .product-description .additional-details .area-localization {
+  margin: 0;
   text-align: center;
 }

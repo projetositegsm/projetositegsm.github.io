@@ -9,6 +9,12 @@ data = {
             "title": "Portal San Giovanni",
             "location": "Itatiba - SP",
             "status": "Entrega em <strong>novembro de 2019</strong>",
+            "area_description": "Terreno: 300m<sup>2</sup> | Casas: 300m<sup>2</sup>",
+            "area_localization": [
+                "Quadra K - Lote 2",
+                "Quadra M - Lote 8",
+                "Quadra S1 - Lote 6",
+            ],
             "firstImg": "imgs/products/Itatiba_01.jpg",
             "imageSrcs": [
                 "imgs/products/Itatiba_01.jpg",
@@ -30,6 +36,8 @@ data = {
             "title": "Parque da Imprensa",
             "location": "Mogi Mirim - SP",
             "status": "Finalizado. <strong>Pronta entrega</strong>",
+            "area_description": "Terreno: 380m<sup>2</sup> | Casa: 155m<sup>2</sup>",
+            "area_localization": [],
             "firstImg": "imgs/products/Mogi_01.jpg",
             "imageSrcs": [
                 "imgs/products/Mogi_01.jpg",
@@ -50,6 +58,10 @@ data = {
             "title": "Alphaville Rio Costa do Sol",
             "location": "Rio das Ostras - RJ",
             "status": "Em desenvolvimento",
+            "area_description": "Terreno: 460m<sup>2</sup> | Casa: 330m<sup>2</sup>",
+            "area_localization": [
+                "Residencial 1 - Quadra O - Lote 7",
+            ],
             "firstImg": "imgs/products/Rio_02.jpg",
             "imageSrcs": [
                 "imgs/products/Rio_02.jpg",
@@ -70,6 +82,10 @@ data = {
             "title": "Alphaville Jacuhy",
             "location": "Vitória - ES",
             "status": "Entrega em <strong>novembro de 2019</strong>",
+            "area_description": "Terreno: 460m<sup>2</sup> | Casa: 330m<sup>2</sup>",
+            "area_localization": [
+                "Residencial 4 - Quadra L - Lote 13",
+            ],
             "firstImg": "imgs/products/Vitoria_01.jpg",
             "imageSrcs": [
                 "imgs/products/Vitoria_01.jpg",

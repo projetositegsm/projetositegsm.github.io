@@ -34,14 +34,20 @@
                 <p class="localization">{{ product["location"] }}</p>
                 <p class="status">{{ product["status"] }}</p>
               </div>
-              <div class="description">
+              <div class="description-list">
                 <ul>
                   {% for item in product["description"]["list"] %}
                     <li>
-                      {{ item }}
+                      - {{ item }}
                     </li>
                   {% endfor %}
                 </ul>
+              </div>
+              <div class="additional-details">
+                <p class="area-description">{{ product["area_description"] }}</p>
+                {% for area in product["area_localization"] %}
+                  <p class="area-localization">{{ area }}</p>
+                {% endfor %}
               </div>
             </div>
           </div>
