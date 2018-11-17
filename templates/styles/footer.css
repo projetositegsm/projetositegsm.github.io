@@ -71,8 +71,13 @@
 }
 
 .tk-footer a.email {
+  cursor: pointer;
   font-size: 16px;
   line-height: 18px;
+  color: white;
+}
+
+.tk-footer a.email:hover {
   color: white;
 }
 
