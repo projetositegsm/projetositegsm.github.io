@@ -6,6 +6,7 @@
 }
 
 .cases-col {
+  display: block;
   -ms-flex: 0 0 33.3333%;
   flex: 0 0 33.3333%;
   max-width: 33.3333%;

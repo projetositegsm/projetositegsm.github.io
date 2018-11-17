@@ -10,15 +10,19 @@
       <!-- Start of cases section -->
       <div class="cases-section">
         {% for case in data["cases"] %}
-          <div class="cases-col">
+          <a
+            class="cases-col"
+            href="javascript:void(0);"
+            onclick="openModalImg({{ loop.index }});"
+          >
             <div class="square">
               <div class="case-img img-{{ loop.index }}"></div>
-              <div class="description" onclick="openModalImg({{ loop.index }});">
+              <div class="description" >
                 <span class="detail"></span>
                 <p>{{ case["label"] }}</p>
               </div>
             </div>
-          </div>
+          </a>
           <div class="cases-col">
             <div class="square">
               <div class="case-img img-logo"></div>
