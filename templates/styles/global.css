@@ -7,24 +7,33 @@ section {
 }
 
 /* Section general */
-.section-header h2 {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 45px;
+.section-header {
+  {{ data["typography"]["mobile"]["header"] }}
+  color: {{ data["palette"]["light_green"] }};
   margin-bottom: 8px;
-  color: #4DBD99;
+}
+
+@media(min-width: 768px) {
+  .section-header {
+    {{ data["typography"]["desktop"]["header"] }}
+  }
+}
+
+.section-subheader {
+  {{ data["typography"]["mobile"]["subheader"] }}
+  color: {{ data["palette"]["dark_grey"] }};
+  margin-bottom: 32px;
+}
+
+@media(min-width: 768px) {
+  .section-subheader {
+    {{ data["typography"]["desktop"]["subheader"] }}
+  }
 }
 
 .section-header .highlight {
   font-size: 60px;
   line-height:60px;
-}
-
-.section-header p {
-  font-size: 24px;
-  margin-bottom: 32px;
-  line-height: 28px;
-  color: #6E6E6E;
 }
 
 .only-desktop {

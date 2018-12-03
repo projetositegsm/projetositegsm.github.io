@@ -4,6 +4,26 @@ env = Environment(loader=FileSystemLoader("templates"))
 template = env.get_template("index.html")
 
 data = {
+    "palette": {
+        "light_green": "#4EBC97",
+        "dark_green": "#3D5E53",
+        "dark_grey": "#4C4C4C",
+        "medium_grey": "#BABABA",
+    },
+    "typography": {
+        "desktop": {
+            "header": "font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 700; line-height: 1;",
+            "subheader": "font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 400; line-height: 1;",
+            "text_big": "font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1;",
+            "text": "font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;",
+        },
+        "mobile": {
+            "header": "font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;",
+            "subheader": "font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1;",
+            "text_big": "font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;",
+            "text": "font-family: 'Sansation', sans-serif; font-size: 10px; font-weight: 400; line-height: 1;",
+        },
+    },
     "products": [
         {
             "title": "Portal San Giovanni",

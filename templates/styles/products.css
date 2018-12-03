@@ -76,11 +76,49 @@
 }
 
 .product-card .product-description .title h3 {
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 32px;
+  {{ data["typography"]["mobile"]["header"] }}
   text-align: center;
-  color: #4C4C4C;
+  color: {{ data["palette"]["dark_grey"] }};
+}
+
+@media(min-width: 768px) {
+  .product-card .product-description .title h3 {
+    {{ data["typography"]["desktop"]["header"] }}
+  }
+}
+
+.product-card .product-description .localization {
+  {{ data["typography"] ["mobile"]["subheader"] }}
+  color: {{ data["palette"]["dark_grey"] }};
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .product-card .product-description .localization {
+    {{ data["typography"]["desktop"]["subheader"] }}
+  }
+}
+
+.product-card .product-description .status {
+  {{ data["typography"]["mobile"]["text"] }}
+  color: {{ data["palette"]["light_green"] }};
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .product-card .product-description .status {
+    {{ data["typography"]["desktop"]["text"] }}
+  }
+}
+
+.product-card .product-description {
+  {{ data["typography"]["mobile"]["text"] }}
+}
+
+@media(min-width: 768px) {
+  .product-card .product-description {
+    {{ data["typography"]["desktop"]["text"] }}
+  }
 }
 
 .product-card .product-description .description-list ul {
@@ -90,15 +128,17 @@
   margin: 0;
 }
 
-.product-card .product-description .localization {
-  font-size: 20px;
-  line-height: 23px;
-  color: #4C4C4C;
+.product-card .product-description .description-list li {
+  margin-bottom: 16px;
+}
+
+.product-card .product-description .additional-details .area-description {
+  color: {{ data["palette"]["light_green"] }};
   text-align: center;
 }
 
-.product-card .product-description .status {
-  color: #4DBD99;
+.product-card .product-description .additional-details .area-localization {
+  margin: 0;
   text-align: center;
 }
 
@@ -110,14 +150,4 @@
   .product-card .product-description .additional-details {
     margin-top: 0;
   }
-}
-
-.product-card .product-description .additional-details .area-description {
-  color: #4DBD99;
-  text-align: center;
-}
-
-.product-card .product-description .additional-details .area-localization {
-  margin: 0;
-  text-align: center;
 }

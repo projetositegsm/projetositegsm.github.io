@@ -54,24 +54,33 @@ section {
 }
 
 /* Section general */
-.section-header h2 {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 45px;
+.section-header {
+  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;
+  color: #4EBC97;
   margin-bottom: 8px;
-  color: #4DBD99;
+}
+
+@media(min-width: 768px) {
+  .section-header {
+    font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 700; line-height: 1;
+  }
+}
+
+.section-subheader {
+  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1;
+  color: #4C4C4C;
+  margin-bottom: 32px;
+}
+
+@media(min-width: 768px) {
+  .section-subheader {
+    font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 400; line-height: 1;
+  }
 }
 
 .section-header .highlight {
   font-size: 60px;
   line-height:60px;
-}
-
-.section-header p {
-  font-size: 24px;
-  margin-bottom: 32px;
-  line-height: 28px;
-  color: #6E6E6E;
 }
 
 .only-desktop {
@@ -237,12 +246,12 @@ section {
 .square .description p {
   margin: 0;
   text-align: center;
-  font-size: 16px;
+  font-family: 'Sansation', sans-serif; font-size: 10px; font-weight: 400; line-height: 1;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .square .description p {
-    font-size: 14px;
+    font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
   }
 }
 
@@ -424,11 +433,49 @@ section {
 }
 
 .product-card .product-description .title h3 {
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 32px;
+  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;
   text-align: center;
   color: #4C4C4C;
+}
+
+@media(min-width: 768px) {
+  .product-card .product-description .title h3 {
+    font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 700; line-height: 1;
+  }
+}
+
+.product-card .product-description .localization {
+  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1;
+  color: #4C4C4C;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .product-card .product-description .localization {
+    font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 400; line-height: 1;
+  }
+}
+
+.product-card .product-description .status {
+  font-family: 'Sansation', sans-serif; font-size: 10px; font-weight: 400; line-height: 1;
+  color: #4EBC97;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .product-card .product-description .status {
+    font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
+  }
+}
+
+.product-card .product-description {
+  font-family: 'Sansation', sans-serif; font-size: 10px; font-weight: 400; line-height: 1;
+}
+
+@media(min-width: 768px) {
+  .product-card .product-description {
+    font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
+  }
 }
 
 .product-card .product-description .description-list ul {
@@ -438,15 +485,17 @@ section {
   margin: 0;
 }
 
-.product-card .product-description .localization {
-  font-size: 20px;
-  line-height: 23px;
-  color: #4C4C4C;
+.product-card .product-description .description-list li {
+  margin-bottom: 16px;
+}
+
+.product-card .product-description .additional-details .area-description {
+  color: #4EBC97;
   text-align: center;
 }
 
-.product-card .product-description .status {
-  color: #4DBD99;
+.product-card .product-description .additional-details .area-localization {
+  margin: 0;
   text-align: center;
 }
 
@@ -458,16 +507,6 @@ section {
   .product-card .product-description .additional-details {
     margin-top: 0;
   }
-}
-
-.product-card .product-description .additional-details .area-description {
-  color: #4DBD99;
-  text-align: center;
-}
-
-.product-card .product-description .additional-details .area-localization {
-  margin: 0;
-  text-align: center;
 }
         .tk-footer-wrapper {
   background-color: #4DBD99;
@@ -483,6 +522,8 @@ section {
   flex-direction: column;
   padding: 24px;
   align-items: center;
+
+  font-family: 'Sansation', sans-serif; font-size: 10px; font-weight: 400; line-height: 1;
 }
 
 @media (min-width: 992px) {
@@ -491,6 +532,8 @@ section {
     justify-content: space-between;
     padding: 96px 24px;
     padding-top: 136px;
+
+    font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
   }
 }
 
@@ -528,23 +571,16 @@ section {
 }
 
 .tk-footer h3 {
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: bold;
   color: white;
 }
 
 .tk-footer .contact {
-  font-size: 16px;
-  line-height: 1;
   color: white;
   margin-bottom: 16px;
 }
 
 .tk-footer a.email {
   cursor: pointer;
-  font-size: 16px;
-  line-height: 18px;
   color: white;
 }
 
@@ -787,9 +823,9 @@ section {
       <section id="gsm-cases" class="container">
   <div class="row">
     <div class="col-12">
-      <div class="section-header">
-        <h2>Cases</h1>
-        <p>Projetos realizados</p>
+      <div class="section-header-wrapper">
+        <h2 class="section-header">Cases</h1>
+        <p class="section-subheader">Projetos realizados</p>
       </div>
     </div>
     <div class="col-12">
@@ -1075,9 +1111,9 @@ section {
   <section id="gsm-products" class="container">
     <div class="row">
       <div class="col-12">
-        <div class="section-header">
-          <h2>Produtos</h1>
-          <p>Conheça nossos produtos</p>
+        <div class="section-header-wrapper">
+          <h2 class="section-header">Produtos</h1>
+          <p class="section-subheader">Conheça nossos produtos</p>
         </div>
       </div>
       <div class="col-12">

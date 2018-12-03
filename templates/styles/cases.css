@@ -37,12 +37,12 @@
 .square .description p {
   margin: 0;
   text-align: center;
-  font-size: 16px;
+  {{ data["typography"]["mobile"]["text"] }}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .square .description p {
-    font-size: 14px;
+    {{ data["typography"]["desktop"]["text"] }}
   }
 }
 

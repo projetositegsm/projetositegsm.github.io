@@ -12,6 +12,8 @@
   flex-direction: column;
   padding: 24px;
   align-items: center;
+
+  {{ data["typography"]["mobile"]["text"] }}
 }
 
 @media (min-width: 992px) {
@@ -20,6 +22,8 @@
     justify-content: space-between;
     padding: 96px 24px;
     padding-top: 136px;
+
+    {{ data["typography"]["desktop"]["text"] }}
   }
 }
 
@@ -57,23 +61,16 @@
 }
 
 .tk-footer h3 {
-  font-size: 20px;
-  line-height: 23px;
-  font-weight: bold;
   color: white;
 }
 
 .tk-footer .contact {
-  font-size: 16px;
-  line-height: 1;
   color: white;
   margin-bottom: 16px;
 }
 
 .tk-footer a.email {
   cursor: pointer;
-  font-size: 16px;
-  line-height: 18px;
   color: white;
 }
 
