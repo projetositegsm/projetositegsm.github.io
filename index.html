@@ -112,26 +112,17 @@
   background-size: contain;
 }
         .hero-bg {
-  margin: 77px -15px 0 -15px;
-  background-image: url('imgs/home.png');
-  height: 45%;
+  margin-top: 77px;
+  background-image: url('imgs/home_mobile.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
+  height: calc(100% - 75px);
 }
 
-@media (min-width: 992px) {
+@media(min-width: 576px) {
   .hero-bg {
-    height: 100%;
-    max-height: 488px;
-    background-position: center top;
-    background-size: 100% auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero-bg {
-    max-height: 579px;
+    background-image: url('imgs/home.png');
   }
 }
         #gsm-about {
@@ -356,7 +347,11 @@
     max-width: 20% !important;
   }
 }
-        .cases-section {
+        #gsm-cases {
+  margin-bottom: 120px;
+}
+
+.cases-section {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -909,9 +904,7 @@
   </div>
 </nav>
       <div style="background-color: black;">
-  <div class="container">
-    <div class="hero-bg"></div>
-  </div>
+  <div class="hero-bg"></div>
 </div>
       <section id="gsm-about">
   <div class="first-image"></div>
