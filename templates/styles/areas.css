@@ -109,3 +109,18 @@
     max-width: 20% !important;
   }
 }
+
+#gsm-areas .areas-title {
+  display: flex;
+}
+
+#gsm-areas .section-header {
+  margin: 0;
+}
+
+#gsm-areas span {
+  margin-right: 10px;
+  color: {{ data["palette"]["light_green"] }};
+  {{ data["typography"]["mobile"]["header"] }}
+  font-size: 50px;
+}
