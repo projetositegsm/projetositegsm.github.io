@@ -1,4 +1,5 @@
 .tk-footer-wrapper {
+  margin-top: -1px;
   background-color: #4DBD99;
 
   background-image: url("imgs/footer.png");
@@ -16,6 +17,11 @@
   {{ data["typography"]["mobile"]["text"] }}
 }
 
+.tk-footer .contact-title {
+  {{ data["typography"]["mobile"]["header"] }}
+  color: {{ data["palette"]["white"] }};
+}
+
 @media (min-width: 992px) {
   .tk-footer {
     flex-direction: row;
@@ -24,6 +30,10 @@
     padding-top: 136px;
 
     {{ data["typography"]["desktop"]["text"] }}
+  }
+
+  .tk-footer .contact-title {
+    {{ data["typography"]["desktop"]["header"] }}
   }
 }
 
@@ -49,24 +59,26 @@
 }
 
 .tk-footer .address-wrapper {
-  margin-bottom: 24px;
+  text-align: center;
+  color: {{ data["palette"]["white"] }};
+  {{ data["typography"]["mobile"]["text"] }}
+  margin-bottom: 81px;
 }
 
 @media (min-width: 992px) {
   .tk-footer .address-wrapper {
+    text-align: left;
     margin-bottom: 0;
+    border-right: 1px solid {{ data["palette"]["white"] }};
     padding-right: 32px;
-    border-right: 1px solid white;
+    margin-right: 32px;
+    {{ data["typography"]["desktop"]["text"] }}
   }
 }
 
-.tk-footer h3 {
-  color: white;
-}
-
-.tk-footer .contact {
-  color: white;
-  margin-bottom: 16px;
+.tk-footer .address-wrapper p {
+  margin: 0;
+  padding: 0;
 }
 
 .tk-footer a.email {
@@ -78,12 +90,12 @@
   color: white;
 }
 
-@media (min-width: 992px) {
-  .social-contacts {
-    margin-left: 32px;
-  }
+.tk-footer .social-contacts {
+  display: flex;
+  justify-content: center;
 }
 
 .tk-footer .social-contacts a {
   margin-right: 8px;
+  margin-left: 8px;
 }

@@ -1,6 +1,13 @@
 #gsm-about-2 {
   position: relative;
   margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+@media(min-width: 992px) {
+  #gsm-about-2 {
+    margin-bottom: 127px;
+  }
 }
 
 #gsm-about-2 .first-image {

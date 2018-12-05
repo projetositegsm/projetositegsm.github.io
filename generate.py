@@ -5,6 +5,7 @@ template = env.get_template("index.html")
 
 data = {
     "palette": {
+        "white": "#FFFFFF",
         "light_green": "#4EBC97",
         "dark_green": "#3D5E53",
         "dark_grey": "#4C4C4C",
@@ -125,7 +126,7 @@ data = {
         }
     ],
     "sections": [
-        { "title": "QUEM SOMOS", "id": "gsm-quem-somos" },
+        { "title": "QUEM SOMOS", "id": "gsm-about" },
         { "title": "ATUAÇÃO", "id": "gsm-areas" },
         { "title": "CASES", "id": "gsm-cases" },
         { "title": "PRODUTOS", "id": "gsm-products" },

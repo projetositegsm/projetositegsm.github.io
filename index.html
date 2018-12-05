@@ -239,6 +239,13 @@
         #gsm-about-2 {
   position: relative;
   margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+@media(min-width: 992px) {
+  #gsm-about-2 {
+    margin-bottom: 127px;
+  }
 }
 
 #gsm-about-2 .first-image {
@@ -728,6 +735,7 @@
   }
 }
         .tk-footer-wrapper {
+  margin-top: -1px;
   background-color: #4DBD99;
 
   background-image: url("imgs/footer.png");
@@ -745,6 +753,11 @@
   font-family: 'Sansation', sans-serif; font-size: 10px; font-weight: 400; line-height: 1;
 }
 
+.tk-footer .contact-title {
+  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;
+  color: #FFFFFF;
+}
+
 @media (min-width: 992px) {
   .tk-footer {
     flex-direction: row;
@@ -753,6 +766,10 @@
     padding-top: 136px;
 
     font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
+  }
+
+  .tk-footer .contact-title {
+    font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 700; line-height: 1;
   }
 }
 
@@ -778,24 +795,26 @@
 }
 
 .tk-footer .address-wrapper {
-  margin-bottom: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Sansation', sans-serif; font-size: 10px; font-weight: 400; line-height: 1;
+  margin-bottom: 81px;
 }
 
 @media (min-width: 992px) {
   .tk-footer .address-wrapper {
+    text-align: left;
     margin-bottom: 0;
+    border-right: 1px solid #FFFFFF;
     padding-right: 32px;
-    border-right: 1px solid white;
+    margin-right: 32px;
+    font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
   }
 }
 
-.tk-footer h3 {
-  color: white;
-}
-
-.tk-footer .contact {
-  color: white;
-  margin-bottom: 16px;
+.tk-footer .address-wrapper p {
+  margin: 0;
+  padding: 0;
 }
 
 .tk-footer a.email {
@@ -807,14 +826,14 @@
   color: white;
 }
 
-@media (min-width: 992px) {
-  .social-contacts {
-    margin-left: 32px;
-  }
+.tk-footer .social-contacts {
+  display: flex;
+  justify-content: center;
 }
 
 .tk-footer .social-contacts a {
   margin-right: 8px;
+  margin-left: 8px;
 }
 
         .tk-modal {
@@ -924,7 +943,7 @@
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
               class="nav-link mx-sm-3"
-              href="#gsm-quem-somos"
+              href="#gsm-about"
             >
               QUEM SOMOS
             </a>
@@ -1716,7 +1735,7 @@
           <img class="footer-logo" src="imgs/logo_footer.png" />
           <div class="address-n-contact-wrapper">
             <div class="address-wrapper">
-              <h3>CONTATO</h3>
+              <h3 class="contact-title">CONTATO</h3>
               <p class="contact">
                 Rua Sebastião Lanza, 317<br/>
                 CEP 13805-027 - Mogi Mirim/SP
