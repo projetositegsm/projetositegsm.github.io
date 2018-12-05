@@ -236,6 +236,81 @@
     background-position: calc(50% - 260px);
   }
 }
+        #gsm-about-2 {
+  position: relative;
+  margin-top: 20px;
+}
+
+#gsm-about-2 .first-image {
+  position: absolute;
+  background-image: url("imgs/about/third.png");
+  background-position: calc(50% + 73px);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  height: 371px;
+  width: 100%;
+}
+
+#gsm-about-2 .desc-container.first {
+  margin-top: 371px;
+  margin-bottom: 40px;
+}
+
+@media(min-width: 992px) {
+  #gsm-about-2 .first-image {
+    background-position: calc(50% + 280px);
+    height: 440px;
+  }
+
+  #gsm-about-2 .desc-container.first {
+    margin-top: 170px;
+    margin-bottom: 190px;
+  }
+}
+
+@media(min-width: 1200px) {
+  #gsm-about-2 .first-image {
+    background-position: calc(50% + 380px);
+    height: 440px;
+  }
+}
+
+#gsm-about-2 .table-1, #gsm-about-2 .table-2 {
+  max-width: 100%;
+  height: auto;
+}
+
+#gsm-about-2 .table-2 {
+  margin-top: 20px;
+  width: 80%;
+}
+
+#gsm-about-2 .table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(min-width: 992px) {
+  #gsm-about-2 .table-2 {
+    width: 50%;
+  }
+}
+
+@media(min-width: 1276px) {
+  #gsm-about-2 .table-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  #gsm-about-2 .table-2 {
+    width: 50%;
+    margin-left: 47px;
+  }
+}
         #gsm-areas p {
   margin: 0;
   padding: 0;
@@ -927,6 +1002,29 @@
           <p class="description">
             <strong>Valorizar a prática da arquitetura, urbanismo e engenharia em harmonia com o meio ambiente</strong>, priorizando os sistemas e os materiais usados, do começo ao fim do projeto.
           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      <section id="gsm-about-2">
+  <div class="first-image"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="desc-container first">
+          <h2 class="section-header">ÍNDICES DE EFICIÊNCIA<br />DE PROJETO E CUSTO</h2>
+          <p class="description">
+          Utilização de índices históricos como <strong>ferramenta de análise</strong> de projeto, <strong>evitando sub ou super dimensionamento</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="table-container">
+          <img class="table-1" src="imgs/about/tabela1.png" />
+          <img class="table-2" src="imgs/about/tabela2.png" />
         </div>
       </div>
     </div>
