@@ -1,0 +1,111 @@
+#gsm-about {
+  position: relative;
+}
+
+#gsm-about .first-image {
+  position: absolute;
+  background-image: url("imgs/about/first.png");
+  background-position: calc(50% + 118px);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  height: 400px;
+  width: 100%;
+}
+
+#gsm-about .second-image {
+  position: absolute;
+  bottom: 0;
+
+  background-image: url("imgs/about/second.png");
+  background-position: calc(50% - 23px);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  height: 227px;
+  width: 100%;
+}
+
+#gsm-about .desc-container.first {
+  margin-top: 400px;
+  margin-bottom: 40px;
+}
+
+#gsm-about .desc-container.first > .section-header {
+  margin-bottom: 20px;
+}
+
+#gsm-about .desc-container.second {
+  margin-bottom: 267px;
+}
+
+#gsm-about .desc-container.second > .section-header {
+  margin-bottom: 20px;
+}
+
+#gsm-about .description {
+  {{ data["typography"]["mobile"]["text_big"] }}
+  color: {{ data["palette"]["dark_grey"] }};
+}
+
+@media(min-width: 576px) {
+  #gsm-about .second-image {
+    background-position: calc(50% - 121px);
+  }
+}
+
+@media(min-width: 768px) {
+  #gsm-about .first-image {
+    height: 600px;
+    background-position: calc(50% + 197px);
+  }
+
+  #gsm-about .desc-container.first {
+    margin-top: 600px;
+  }
+
+  #gsm-about .second-image {
+    background-position: calc(50% - 121px);
+    height: 295px;
+  }
+
+  #gsm-about .desc-container.second {
+    margin-bottom: 335px;
+  }
+}
+
+
+@media(min-width: 992px) {
+  #gsm-about .first-image {
+    height: 600px;
+    background-position: calc(50% + 312px);
+  }
+
+  #gsm-about .second-image {
+    background-position: calc(50% - 221px);
+  }
+
+  #gsm-about .desc-container.second {
+    margin-bottom: 178px;
+  }
+
+  #gsm-about .desc-container.first {
+    display: flex;
+    margin-top: 320px;
+    margin-bottom: 180px;
+  }
+
+  #gsm-about .desc-container.first > .section-header {
+    margin-right: 30px;
+  }
+}
+
+@media(min-width: 1200px) {
+  #gsm-about .first-image {
+    background-position: calc(50% + 383px);
+  }
+
+  #gsm-about .second-image {
+    background-position: calc(50% - 260px);
+  }
+}

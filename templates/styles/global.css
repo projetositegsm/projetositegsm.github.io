@@ -2,10 +2,6 @@ body {
   font-family: Sansation, sans-serif;
 }
 
-section {
-  margin-top: 80px;
-}
-
 /* Section general */
 .section-header {
   {{ data["typography"]["mobile"]["header"] }}

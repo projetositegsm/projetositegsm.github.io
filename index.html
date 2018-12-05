@@ -49,10 +49,6 @@
   font-family: Sansation, sans-serif;
 }
 
-section {
-  margin-top: 80px;
-}
-
 /* Section general */
 .section-header {
   font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;
@@ -136,6 +132,117 @@ section {
 @media (min-width: 1200px) {
   .hero-bg {
     max-height: 579px;
+  }
+}
+        #gsm-about {
+  position: relative;
+}
+
+#gsm-about .first-image {
+  position: absolute;
+  background-image: url("imgs/about/first.png");
+  background-position: calc(50% + 118px);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  height: 400px;
+  width: 100%;
+}
+
+#gsm-about .second-image {
+  position: absolute;
+  bottom: 0;
+
+  background-image: url("imgs/about/second.png");
+  background-position: calc(50% - 23px);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+
+  height: 227px;
+  width: 100%;
+}
+
+#gsm-about .desc-container.first {
+  margin-top: 400px;
+  margin-bottom: 40px;
+}
+
+#gsm-about .desc-container.first > .section-header {
+  margin-bottom: 20px;
+}
+
+#gsm-about .desc-container.second {
+  margin-bottom: 267px;
+}
+
+#gsm-about .desc-container.second > .section-header {
+  margin-bottom: 20px;
+}
+
+#gsm-about .description {
+  font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
+  color: #4C4C4C;
+}
+
+@media(min-width: 576px) {
+  #gsm-about .second-image {
+    background-position: calc(50% - 121px);
+  }
+}
+
+@media(min-width: 768px) {
+  #gsm-about .first-image {
+    height: 600px;
+    background-position: calc(50% + 197px);
+  }
+
+  #gsm-about .desc-container.first {
+    margin-top: 600px;
+  }
+
+  #gsm-about .second-image {
+    background-position: calc(50% - 121px);
+    height: 295px;
+  }
+
+  #gsm-about .desc-container.second {
+    margin-bottom: 335px;
+  }
+}
+
+
+@media(min-width: 992px) {
+  #gsm-about .first-image {
+    height: 600px;
+    background-position: calc(50% + 312px);
+  }
+
+  #gsm-about .second-image {
+    background-position: calc(50% - 221px);
+  }
+
+  #gsm-about .desc-container.second {
+    margin-bottom: 178px;
+  }
+
+  #gsm-about .desc-container.first {
+    display: flex;
+    margin-top: 320px;
+    margin-bottom: 180px;
+  }
+
+  #gsm-about .desc-container.first > .section-header {
+    margin-right: 30px;
+  }
+}
+
+@media(min-width: 1200px) {
+  #gsm-about .first-image {
+    background-position: calc(50% + 383px);
+  }
+
+  #gsm-about .second-image {
+    background-position: calc(50% - 260px);
   }
 }
         #gsm-areas p {
@@ -806,6 +913,32 @@ section {
     <div class="hero-bg"></div>
   </div>
 </div>
+      <section id="gsm-about">
+  <div class="first-image"></div>
+  <div class="second-image"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="desc-container first">
+          <h2 class="section-header">ENGENHARIA<br />E NEGÓCIOS</h2>
+          <p class="description">
+            Empresa de engenharia focada em oferecer soluções voltadas ao <strong>mercado de desenvolvimento imobiliário</strong> e <strong>bairros planejados</strong>. Agindo com serviço e atendimento personalizados e flexíveis. Assim estabelecendo <strong>relações de excelência e qualidade com nossos clientes</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-6 offset-lg-6">
+        <div class="desc-container second">
+          <h2 class="section-header">FILOSOFIA</h2>
+          <p class="description">
+            <strong>Valorizar a prática da arquitetura, urbanismo e engenharia em harmonia com o meio ambiente</strong>, priorizando os sistemas e os materiais usados, do começo ao fim do projeto.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       <section id="gsm-areas">
   <div class="container">
     <div class="row">
@@ -863,7 +996,7 @@ section {
   <div class="row">
     <div class="col-12">
       <div class="section-header-wrapper">
-        <h2 class="section-header">Cases</h1>
+        <h2 class="section-header">CASES</h1>
         <p class="section-subheader">Projetos realizados</p>
       </div>
     </div>
@@ -1151,7 +1284,7 @@ section {
     <div class="row">
       <div class="col-12">
         <div class="section-header-wrapper">
-          <h2 class="section-header">Produtos</h1>
+          <h2 class="section-header">PRODUTOS</h1>
           <p class="section-subheader">Conheça nossos produtos</p>
         </div>
       </div>
