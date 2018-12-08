@@ -10,6 +10,7 @@ data = {
         "dark_green": "#3D5E53",
         "dark_grey": "#4C4C4C",
         "medium_grey": "#BABABA",
+        "other_grey": "#AFADAD",
     },
     "typography": {
         "desktop": {
@@ -28,9 +29,9 @@ data = {
     "products": [
         {
             "title": "Portal San Giovanni",
-            "location": "Itatiba/SP",
+            "location": "Itatiba / SP",
             "status": "Entrega em <strong>novembro de 2019</strong>",
-            "area_description": "Terreno: 300m<sup>2</sup> | Casas: 300m<sup>2</sup>",
+            "area_description": "Terreno: 380m<sup>2</sup> | Casa: 300m<sup>2</sup>",
             "area_localization": [
                 "Quadra K - Lote 2",
                 "Quadra M - Lote 8",
@@ -55,9 +56,9 @@ data = {
         },
         {
             "title": "Parque da Imprensa",
-            "location": "Mogi Mirim/SP",
+            "location": "Mogi Mirim / SP",
             "status": "Finalizado. <strong>Pronta entrega</strong>",
-            "area_description": "Terreno: 380m<sup>2</sup> | Casa: 155m<sup>2</sup>",
+            "area_description": "Terreno: 300,00m<sup>2</sup> | Casa: 155m<sup>2</sup>",
             "area_localization": [],
             "firstImg": "imgs/products/Mogi_01.jpg",
             "imageSrcs": [
@@ -77,7 +78,7 @@ data = {
         },
         {
             "title": "Alphaville Rio Costa do Sol",
-            "location": "Rio das Ostras/RJ",
+            "location": "Rio das Ostras / RJ",
             "status": "Em desenvolvimento",
             "area_description": "Terreno: 460m<sup>2</sup> | Casa: 330m<sup>2</sup>",
             "area_localization": [
@@ -101,7 +102,7 @@ data = {
         },
         {
             "title": "Alphaville Jacuhy",
-            "location": "Vitória/ES",
+            "location": "Vitória / ES",
             "status": "Entrega em <strong>novembro de 2019</strong>",
             "area_description": "Terreno: 460m<sup>2</sup> | Casa: 330m<sup>2</sup>",
             "area_localization": [

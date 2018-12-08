@@ -100,7 +100,7 @@
 }
 
 .product-card .product-description .status {
-  {{ data["typography"]["mobile"]["text"] }}
+  {{ data["typography"]["mobile"]["text_big"] }}
   color: {{ data["palette"]["light_green"] }};
   text-align: center;
 }
@@ -112,7 +112,7 @@
 }
 
 .product-card .product-description {
-  {{ data["typography"]["mobile"]["text"] }}
+  {{ data["typography"]["mobile"]["text_big"] }}
 }
 
 @media(min-width: 768px) {
@@ -125,11 +125,11 @@
   list-style: none;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin: 26px 0;
 }
 
 .product-card .product-description .description-list li {
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 .product-card .product-description .additional-details .area-description {
