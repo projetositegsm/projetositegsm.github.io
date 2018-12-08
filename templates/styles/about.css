@@ -60,6 +60,10 @@
     background-position: calc(50% + 197px);
   }
 
+  #gsm-about .description {
+    {{ data["typography"]["desktop"]["text_big"] }}
+  }
+
   #gsm-about .desc-container.first {
     margin-top: 600px;
   }
@@ -86,13 +90,15 @@
   }
 
   #gsm-about .desc-container.second {
-    margin-bottom: 178px;
+    margin-bottom: 78px;
+    margin-top: 78px;
+    margin-right: 100px;
   }
 
   #gsm-about .desc-container.first {
     display: flex;
-    margin-top: 320px;
-    margin-bottom: 180px;
+    margin-top: 218px;
+    margin-bottom: 218px;
   }
 
   #gsm-about .desc-container.first > .section-header {
@@ -106,6 +112,6 @@
   }
 
   #gsm-about .second-image {
-    background-position: calc(50% - 260px);
+    background-position: calc(50% - 387px);
   }
 }

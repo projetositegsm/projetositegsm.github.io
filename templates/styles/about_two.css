@@ -26,6 +26,22 @@
   margin-bottom: 40px;
 }
 
+#gsm-about-2 .section-header {
+  margin-bottom: 20px;
+}
+
+#gsm-about-2 .description {
+  {{ data["typography"]["mobile"]["text_big"] }}
+  color: {{ data["palette"]["dark_grey"] }};
+}
+
+@media(min-width: 768px) {
+  #gsm-about-2 .description {
+    {{ data["typography"]["desktop"]["text_big"] }}
+  }
+}
+
+
 @media(min-width: 992px) {
   #gsm-about-2 .first-image {
     background-position: calc(50% + 280px);

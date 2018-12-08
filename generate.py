@@ -15,13 +15,13 @@ data = {
         "desktop": {
             "header": "font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 700; line-height: 1;",
             "subheader": "font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 400; line-height: 1;",
-            "text_big": "font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1;",
+            "text_big": "font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.1;",
             "text": "font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;",
         },
         "mobile": {
             "header": "font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;",
             "subheader": "font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1;",
-            "text_big": "font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;",
+            "text_big": "font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.1;",
             "text": "font-family: 'Sansation', sans-serif; font-size: 10px; font-weight: 400; line-height: 1;",
         },
     },
