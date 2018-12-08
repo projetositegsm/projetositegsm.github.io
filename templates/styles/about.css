@@ -82,11 +82,11 @@
 @media(min-width: 992px) {
   #gsm-about .first-image {
     height: 600px;
-    background-position: calc(50% + 312px);
+    background-position: calc(50% + 400px);
   }
 
   #gsm-about .second-image {
-    background-position: calc(50% - 221px);
+    background-position: calc(50% - 314px);
   }
 
   #gsm-about .desc-container.second {
