@@ -245,12 +245,12 @@
         #gsm-about-2 {
   position: relative;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 @media(min-width: 992px) {
   #gsm-about-2 {
-    margin-bottom: 127px;
+    margin-bottom: 80px;
   }
 }
 
@@ -340,7 +340,24 @@
     margin-left: 47px;
   }
 }
-        #gsm-areas p {
+        #gsm-areas {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media(min-width: 768px) {
+  #gsm-areas {
+    margin-bottom: 120px;
+  }
+}
+
+@media(min-width: 992px) {
+  #gsm-areas {
+    margin-bottom: 110px;
+  }
+}
+
+#gsm-areas p {
   margin: 0;
   padding: 0;
 }
@@ -354,33 +371,40 @@
 }
 
 #gsm-areas .areas-bg {
-  background-image: url("imgs/areas/areas_bg.png");
+  background-image: url("imgs/areas/areas_bg_mobile.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 115%;
+  background-size: auto 80%;
+}
+
+@media(min-width: 576px) {
+  #gsm-areas .areas-bg {
+    background-size: auto 80%;
+  }
 }
 
 @media(min-width: 768px) {
   #gsm-areas .areas-bg {
-    background-size: auto 110%;
+    background-size: auto 96%;
   }
 }
 
 @media(min-width: 992px) {
   #gsm-areas .areas-bg {
+    background-image: url("imgs/areas/areas_bg.png");
     background-size: auto 100%;
   }
 }
 
 #gsm-areas .areas-content {
-  padding-top: 156px;
-  padding-bottom: 215px;
+  padding-top: 147px;
+  padding-bottom: 130px;
 }
 
 @media(min-width: 768px) {
   #gsm-areas .areas-content {
-    padding-top: 254px;
-    padding-bottom: 297px;
+    padding-top: 149px;
+    padding-bottom: 100px;
   }
 }
 
@@ -399,15 +423,9 @@
   height: auto;
 }
 
-@media(min-width: 576px) {
-  #gsm-areas .icon-img {
-    max-width: 120px;
-  }
-}
-
 @media(min-width: 768px) {
   #gsm-areas .icon-img {
-    max-width: 100%;
+    max-width: 115px;
   }
 }
 
@@ -419,7 +437,9 @@
 }
 
 @media(min-width: 768px) {
-  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.1;
+  #gsm-areas .icon-description {
+    font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.1;
+  }
 }
 
 #gsm-areas .icons-wrapper {
@@ -427,11 +447,10 @@
   flex-wrap: wrap;
 }
 
-@media (min-width: 992px) {
-  #gsm-areas .icon-description {
-  }
 
-  #gsm-areas .icon-img {
+@media (min-width: 992px) {
+  #gsm-areas .icons-wrapper {
+    padding: 0 70px;
   }
 }
 
@@ -453,7 +472,15 @@
 }
 
 #gsm-areas .areas-title {
+  position: relative;
+  top: 100px;
   display: flex;
+}
+
+@media(min-width: 768px) {
+  #gsm-areas .areas-title {
+    top: 49px;
+  }
 }
 
 #gsm-areas .section-header {
@@ -465,6 +492,7 @@
   color: #4EBC97;
   font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;
   font-size: 50px;
+  line-height: 0.8;
 }
         #gsm-cases {
   margin-bottom: 120px;
