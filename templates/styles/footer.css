@@ -29,8 +29,9 @@
   .tk-footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 96px 24px;
+    padding: 96px 0px;
     padding-top: 136px;
+    padding-right: 100px;
 
     {{ data["typography"]["desktop"]["text"] }}
   }
@@ -52,6 +53,8 @@
   .footer-logo {
     margin: 0;
     max-width: 289px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -66,7 +69,7 @@
   text-align: center;
   color: {{ data["palette"]["other_grey"] }};
   {{ data["typography"]["mobile"]["text_big"] }}
-  margin-bottom: 81px;
+  margin-bottom: 55px;
 }
 
 @media (min-width: 992px) {
