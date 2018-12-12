@@ -23,7 +23,7 @@
             </div>
             <div class="social-contacts">
               {% for social_link in data["social_links"] %}
-                <a href="{{ social_link['url'] }}">
+                <a href="{{ social_link['url'] }}" target="_blank">
                   <img src="{{ social_link['img'] }}" />
                 </a>
               {% endfor %}
