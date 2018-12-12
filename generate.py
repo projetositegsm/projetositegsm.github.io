@@ -134,9 +134,9 @@ data = {
         { "title": "CONTATO", "id": "gsm-contatos" },
     ],
     "social_links": [
-        {"img": "imgs/btn_facebook.png", "url": "#"},
-        {"img": "imgs/btn_instagram.png", "url": "#"},
-        {"img": "imgs/btn_linkedin.png", "url": "#"},
+        {"img": "imgs/btn_facebook.png", "url": "https://www.facebook.com/Silveira-Marques-Engenharia-369667870472927/"},
+        {"img": "imgs/btn_instagram.png", "url": "https://www.instagram.com/silveiramarqueseng/"},
+        {"img": "imgs/btn_linkedin.png", "url": "https://www.linkedin.com/company/silveira-marques-engenharia/"},
     ],
     "cases": [
         {
