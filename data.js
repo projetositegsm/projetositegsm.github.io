@@ -2,6 +2,7 @@
  * Este arquivo contém as informações relativas as sessões de produto e de contato.
  * Qualquer alteração neste arquivo irá alterar as informações exibidas no website.
  * Para modificar este arquivo você precisa estar logado(a) no site www.github.com
+ * e clicar no ícone de edição (Edit this file).
  *
  * 
  * MODIFICAÇÕES NA SESSÃO DE PRODUTOS E CONTATO:
@@ -26,7 +27,7 @@ window.globalData = {
   * */
   contact: {
     addressLineOne: 'Rua Sebastião Lanza, 317',
-    addressLineTwo: 'CEP 13805-027 - Mogi Mirim/SP',
+    addressLineTwo: 'CEP 13805-027 - Mogi Mirim/SP.',
     number: '+55 11 5096-4265',
     email: 'contato@silveiramarques.com',
   },
