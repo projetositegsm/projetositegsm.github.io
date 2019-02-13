@@ -27,7 +27,7 @@ window.globalData = {
   * */
   contact: {
     addressLineOne: 'Rua Sebastião Lanza, 317',
-    addressLineTwo: 'CEP 13805-027 - Mogi Mirim/SP.',
+    addressLineTwo: 'CEP 13805-027 - Mogi Mirim/SP',
     number: '+55 11 5096-4265',
     email: 'contato@silveiramarques.com',
   },
