@@ -1,2022 +1,677 @@
-<!DOCTYPE>
+<!DOCTYPE >
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129759364-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-129759364-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-129759364-1');
+      gtag("config", "UA-129759364-1");
     </script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <title>Silveira Marques Engenharia</title>
-
-    <style>
-      
-        @font-face {
-  font-family: Sansation;
-  src: url('fonts/Sansation_Regular.ttf');
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Sansation;
-  src: url('fonts/Sansation_Bold.ttf');
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: Sansation;
-  src: url('fonts/Sansation_Italic.ttf');
-  font-style: italic;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Sansation;
-  src: url('fonts/Sansation_Bold_Italic.ttf');
-  font-style: italic;
-  font-weight: 700;
-}
-        body {
-  font-family: Sansation, sans-serif;
-}
-
-/* Section general */
-.section-header {
-  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;
-  color: #4EBC97;
-  margin-bottom: 8px;
-}
-
-@media(min-width: 768px) {
-  .section-header {
-    font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 700; line-height: 1;
-  }
-}
-
-.section-subheader {
-  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1;
-  color: #4C4C4C;
-  margin-bottom: 32px;
-}
-
-@media(min-width: 768px) {
-  .section-subheader {
-    font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 400; line-height: 1;
-  }
-}
-
-.section-header .highlight {
-  font-size: 60px;
-  line-height:60px;
-}
-
-.only-desktop {
-  display: none !important;
-}
-
-@media (min-width: 992px) {
-  .only-desktop {
-    display: block !important;
-  }
-}
-
-.only-mobile {
-  display: block !important;
-}
-
-@media (min-width: 992px) {
-  .only-mobile {
-    display: none !important;
-  }
-}
-        a.nav-link {
-  font-size: 15px;
-  color: white !important;
-}
-
-.active a.nav-link {
-  border-bottom: 3px solid #4DBD99;
-}
-
-.navbar-dark .navbar-toggler-icon {
-  background-image: url('imgs/btn_dropdown.png');
-  background-size: contain;
-}
-        .hero-bg {
-  margin-top: 77px;
-  background-image: url('imgs/home_mobile.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  height: calc(100% - 75px);
-}
-
-@media(min-width: 576px) {
-  .hero-bg {
-    background-image: url('imgs/home.png');
-  }
-}
-        #gsm-about {
-  position: relative;
-}
-
-#gsm-about .first-image {
-  position: absolute;
-  background-image: url("imgs/about/first.png");
-  background-position: calc(50% + 118px);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-
-  height: 400px;
-  width: 100%;
-}
-
-#gsm-about .second-image {
-  position: absolute;
-  bottom: 0;
-
-  background-image: url("imgs/about/second.png");
-  background-position: calc(50% - 23px);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-
-  height: 227px;
-  width: 100%;
-}
-
-#gsm-about .desc-container.first {
-  margin-top: 400px;
-  margin-bottom: 40px;
-}
-
-#gsm-about .desc-container.first > .section-header {
-  margin-bottom: 20px;
-}
-
-#gsm-about .desc-container.second {
-  margin-bottom: 267px;
-}
-
-#gsm-about .desc-container.second > .section-header {
-  margin-bottom: 20px;
-}
-
-#gsm-about .description {
-  font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.1;
-  color: #4C4C4C;
-}
-
-@media(min-width: 576px) {
-  #gsm-about .second-image {
-    background-position: calc(50% - 121px);
-  }
-}
-
-@media(min-width: 768px) {
-  #gsm-about .first-image {
-    height: 600px;
-    background-position: calc(50% + 197px);
-  }
-
-  #gsm-about .description {
-    font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.1;
-  }
-
-  #gsm-about .desc-container.first {
-    margin-top: 600px;
-  }
-
-  #gsm-about .second-image {
-    background-position: calc(50% - 121px);
-    height: 295px;
-  }
-
-  #gsm-about .desc-container.second {
-    margin-bottom: 335px;
-  }
-}
-
-
-@media(min-width: 992px) {
-  #gsm-about .first-image {
-    height: 600px;
-    background-position: calc(50% + 400px);
-  }
-
-  #gsm-about .second-image {
-    background-position: calc(50% - 314px);
-  }
-
-  #gsm-about .desc-container.second {
-    margin-bottom: 78px;
-    margin-top: 78px;
-    margin-right: 100px;
-  }
-
-  #gsm-about .desc-container.first {
-    display: flex;
-    margin-top: 218px;
-    margin-bottom: 218px;
-  }
-
-  #gsm-about .desc-container.first > .section-header {
-    margin-right: 30px;
-  }
-}
-
-@media(min-width: 1200px) {
-  #gsm-about .first-image {
-    background-position: calc(50% + 383px);
-  }
-
-  #gsm-about .second-image {
-    background-position: calc(50% - 387px);
-  }
-}
-        #gsm-about-2 {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-@media(min-width: 992px) {
-  #gsm-about-2 {
-    margin-bottom: 80px;
-  }
-}
-
-#gsm-about-2 .first-image {
-  position: absolute;
-  background-image: url("imgs/about/third.png");
-  background-position: calc(50% + 73px);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-
-  height: 371px;
-  width: 100%;
-}
-
-#gsm-about-2 .desc-container.first {
-  margin-top: 371px;
-  margin-bottom: 40px;
-}
-
-#gsm-about-2 .section-header {
-  margin-bottom: 20px;
-}
-
-#gsm-about-2 .description {
-  font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.1;
-  color: #4C4C4C;
-}
-
-@media(min-width: 768px) {
-  #gsm-about-2 .description {
-    font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.1;
-  }
-}
-
-
-@media(min-width: 992px) {
-  #gsm-about-2 .first-image {
-    background-position: calc(50% + 280px);
-    height: 440px;
-  }
-
-  #gsm-about-2 .desc-container.first {
-    margin-top: 170px;
-    margin-bottom: 190px;
-  }
-}
-
-@media(min-width: 1200px) {
-  #gsm-about-2 .first-image {
-    background-position: calc(50% + 380px);
-    height: 440px;
-  }
-}
-
-#gsm-about-2 .table-1, #gsm-about-2 .table-2 {
-  max-width: 100%;
-  height: auto;
-}
-
-#gsm-about-2 .table-2 {
-  margin-top: 20px;
-  width: 80%;
-}
-
-#gsm-about-2 .table-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@media(min-width: 992px) {
-  #gsm-about-2 .table-2 {
-    width: 50%;
-  }
-}
-
-@media(min-width: 1276px) {
-  #gsm-about-2 .table-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-
-  #gsm-about-2 .table-2 {
-    width: 50%;
-    margin-left: 47px;
-  }
-}
-        #gsm-areas {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-@media(min-width: 768px) {
-  #gsm-areas {
-    margin-bottom: 120px;
-  }
-}
-
-@media(min-width: 992px) {
-  #gsm-areas {
-    margin-bottom: 110px;
-  }
-}
-
-#gsm-areas p {
-  margin: 0;
-  padding: 0;
-}
-
-#gsm-areas .section-header.only-desktop {
-  padding-top: 50px;
-}
-
-#gsm-areas .section-header.only-mobile {
-  margin-bottom: 32px;
-}
-
-#gsm-areas .areas-bg {
-  background-image: url("imgs/areas/areas_bg_mobile.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 80%;
-}
-
-@media(min-width: 576px) {
-  #gsm-areas .areas-bg {
-    background-size: auto 80%;
-  }
-}
-
-@media(min-width: 768px) {
-  #gsm-areas .areas-bg {
-    background-size: auto 96%;
-  }
-}
-
-@media(min-width: 992px) {
-  #gsm-areas .areas-bg {
-    background-image: url("imgs/areas/areas_bg.png");
-    background-size: auto 100%;
-  }
-}
-
-#gsm-areas .areas-content {
-  padding-top: 147px;
-  padding-bottom: 130px;
-}
-
-@media(min-width: 768px) {
-  #gsm-areas .areas-content {
-    padding-top: 149px;
-    padding-bottom: 100px;
-  }
-}
-
-@media(min-width: 992px) {
-  #gsm-areas .areas-content {
-    padding-top: 208px;
-    padding-bottom: 198px;
-  }
-}
-
-#gsm-areas .icon-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100px;
-  height: auto;
-}
-
-@media(min-width: 768px) {
-  #gsm-areas .icon-img {
-    max-width: 115px;
-  }
-}
-
-#gsm-areas .icon-description {
-  font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.1;
-  color: #FFFFFF;
-  text-align: center;
-  margin: 32px 0;
-}
-
-@media(min-width: 768px) {
-  #gsm-areas .icon-description {
-    font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1.1;
-  }
-}
-
-#gsm-areas .icons-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-@media (min-width: 992px) {
-  #gsm-areas .icons-wrapper {
-    padding: 0 70px;
-  }
-}
-
-#gsm-areas .icon-col:not(:last-child) {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-#gsm-areas .icon-col:last-child {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-@media (min-width: 992px) {
-  #gsm-areas .icon-col {
-    flex: 0 0 20% !important;
-    max-width: 20% !important;
-  }
-}
-
-#gsm-areas .areas-title {
-  position: relative;
-  top: 100px;
-  display: flex;
-}
-
-@media(min-width: 768px) {
-  #gsm-areas .areas-title {
-    top: 49px;
-  }
-}
-
-#gsm-areas .section-header {
-  margin: 0;
-}
-
-#gsm-areas span {
-  margin-right: 10px;
-  color: #4EBC97;
-  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;
-  font-size: 50px;
-  line-height: 0.8;
-}
-        #gsm-cases {
-  margin-bottom: 120px;
-}
-
-.cases-section {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.cases-col {
-  display: block;
-  -ms-flex: 0 0 33.3333%;
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
-}
-
-@media (min-width: 992px) {
-  .cases-col {
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
-    max-width: 20%;
-  }
-}
-
-.square {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 100%;
-}
-
-.square .description .detail {
-  display: block;
-  width: 60px;
-  height: 3px;
-  margin-bottom: 16px;
-  background-color: #4DBD99;
-}
-
-.square .description p {
-  margin: 0;
-  text-align: center;
-  font-family: 'Sansation', sans-serif; font-size: 10px; font-weight: 400; line-height: 1;
-}
-
-@media (min-width: 768px) {
-  .square .description p {
-    font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
-  }
-}
-
-.square .description {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.1s linear;
-  color: white;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 20px;
-}
-
-.square:hover .description {
-  visibility: visible;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.square .case-img {
-  position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.img-logo {
-  background-image: url('imgs/cases/logo.png');
-}
-
-
-  .img-1 {
-    background-image: url("imgs/cases/01_Alphaville Burle Marx_4_bx.jpg");
-  }
-
-  .img-2 {
-    background-image: url("imgs/cases/02_Alphaville Jacuhy_1_bx.jpg");
-  }
-
-  .img-3 {
-    background-image: url("imgs/cases/03_Alphaville Barra da Tijuca_8_bx.jpg");
-  }
-
-  .img-4 {
-    background-image: url("imgs/cases/04_Alphaville Jacuhy_IMG_0179_bx.jpg");
-  }
-
-  .img-5 {
-    background-image: url("imgs/cases/05_Alphaville Jacuhy_IMG_0470_bx.jpg");
-  }
-
-  .img-6 {
-    background-image: url("imgs/cases/06_Dona Carolina_4_bx.jpg");
-  }
-
-  .img-7 {
-    background-image: url("imgs/cases/07_City Parque Itu_7_bx.jpg");
-  }
-
-  .img-8 {
-    background-image: url("imgs/cases/08_Jardins da Cidade_5_bx.jpg");
-  }
-
-  .img-9 {
-    background-image: url("imgs/cases/09_Tracos da Cidade_3_bx.jpg");
-  }
-
-  .img-10 {
-    background-image: url("imgs/cases/10_Camacari_BA_4_bx.jpg");
-  }
-
-  .img-11 {
-    background-image: url("imgs/cases/11_Guarapari_ES_12_bx.jpg");
-  }
-
-  .img-12 {
-    background-image: url("imgs/cases/12_Macapa_AP_2_bx.jpg");
-  }
-
-  .img-13 {
-    background-image: url("imgs/cases/13_Campina Grande_bx.jpg");
-  }
-
-  .img-14 {
-    background-image: url("imgs/cases/14_Macapa_AP_7_bx.jpg");
-  }
-
-  .img-15 {
-    background-image: url("imgs/cases/15_PROFISSIONAIS 2017_DJI_0109 ok_bx.jpg");
-  }
-
-        .products-bg {
-  background-image: linear-gradient(
-    to bottom,
-    #FFFFFF,
-    #FFFFFF 15%,
-    #4DBD99 15%,
-    #4DBD99
-  );
-}
-
-.product-card {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  margin-bottom: 60px;
-}
-
-@media (min-width: 992px) {
-  .product-card {
-    flex-direction: row;
-  }
-}
-
-.product-card .expanded-img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-@media (min-width: 992px) {
-  .product-card .section {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-
-.thumbnail-col {
-  flex: 0 0 20%;
-  max-width: 20%;
-}
-
-.thumbnail-col img {
-  width: 100%;
-  height: auto;
-  padding: 8px 8px 0 0;
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-@media (min-width: 992px) {
-  padding: 20px 20px 0 0;
-}
-
-.thumbnail-col img:hover {
-  opacity: 1;
-}
-
-.thumbnails-row {
-  display: flex;
-}
-
-.product-card .product-description {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 40px;
-}
-
-@media (min-width: 992px) {
-  .product-card .product-description {
-    padding: 40px;
-  }
-}
-
-.product-card .product-description .title h3 {
-  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;
-  text-align: center;
-  color: #4C4C4C;
-}
-
-@media(min-width: 768px) {
-  .product-card .product-description .title h3 {
-    font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 700; line-height: 1;
-  }
-}
-
-.product-card .product-description .localization {
-  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 400; line-height: 1;
-  color: #4C4C4C;
-  text-align: center;
-}
-
-@media(min-width: 768px) {
-  .product-card .product-description .localization {
-    font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 400; line-height: 1;
-  }
-}
-
-.product-card .product-description .status {
-  font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.1;
-  color: #4EBC97;
-  text-align: center;
-}
-
-@media(min-width: 768px) {
-  .product-card .product-description .status {
-    font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
-  }
-}
-
-.product-card .product-description {
-  font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.1;
-}
-
-@media(min-width: 768px) {
-  .product-card .product-description {
-    font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
-  }
-}
-
-.product-card .product-description .description-list ul {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  margin: 26px 0;
-}
-
-.product-card .product-description .description-list li {
-  margin-bottom: 4px;
-}
-
-.product-card .product-description .additional-details .area-description {
-  color: #4EBC97;
-  text-align: center;
-}
-
-.product-card .product-description .additional-details .area-localization {
-  margin: 0;
-  text-align: center;
-}
-
-.product-card .product-description .additional-details {
-  margin-top: 16px;
-}
-
-@media (min-width: 992px) {
-  .product-card .product-description .additional-details {
-    margin-top: 0;
-  }
-}
-        .tk-footer-wrapper {
-  margin-top: -1px;
-  background-color: #4DBD99;
-
-  background-image: url("imgs/footer.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
-
-  padding-top: 20px;
-}
-
-.tk-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  align-items: center;
-
-  font-family: 'Sansation', sans-serif; font-size: 10px; font-weight: 400; line-height: 1;
-}
-
-.tk-footer .contact-title {
-  font-family: 'Sansation', sans-serif; font-size: 20px; font-weight: 700; line-height: 1;
-  color: #FFFFFF;
-  margin-bottom: 15px;
-}
-
-@media (min-width: 992px) {
-  .tk-footer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 96px 0px;
-    padding-top: 136px;
-    padding-right: 100px;
-
-    font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
-  }
-
-  .tk-footer .contact-title {
-    font-family: 'Sansation', sans-serif; font-size: 24px; font-weight: 700; line-height: 1;
-  }
-}
-
-.footer-logo {
-  display: block;
-  width: 100%;
-  max-width: 228px;
-  height: auto;
-  margin-bottom: 43px;
-}
-
-@media (min-width: 992px) {
-  .footer-logo {
-    margin: 0;
-    max-width: 289px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 992px) {
-  .address-n-contact-wrapper {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.tk-footer .address-wrapper {
-  text-align: center;
-  color: #AFADAD;
-  font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1.1;
-  margin-bottom: 55px;
-}
-
-@media (min-width: 992px) {
-  .tk-footer .address-wrapper {
-    text-align: left;
-    margin-bottom: 0;
-    border-right: 1px solid #AFADAD;
-    padding-right: 32px;
-    margin-right: 32px;
-    font-family: 'Sansation', sans-serif; font-size: 16px; font-weight: 400; line-height: 1;
-  }
-}
-
-.tk-footer .address-wrapper p {
-  margin: 0;
-  padding: 0;
-}
-
-.tk-footer a.email {
-  cursor: pointer;
-  color: #AFADAD;
-}
-
-.tk-footer a.email:hover {
-  color: #AFADAD;
-}
-
-.tk-footer .social-contacts {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.tk-footer .social-contacts a {
-  margin-right: 8px;
-  margin-left: 8px;
-}
-
-@media(min-width: 992px) {
-  .tk-footer .social-contacts {
-    margin-bottom: auto;
-    margin-top: auto;
-  }
-}
-
-        .tk-modal {
-  display: none;
-  position: fixed;
-  z-index: 1050;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.tk-btn {
-  display: block;
-  position: absolute;
-  z-index: 2000;
-  width: 33px;
-  height: 65px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  background-color: black;
-  margin-top: -33px;
-}
-
-.tk-btn.left {
-  background-image: url('imgs/left.png');
-  left: 16px;
-  top: 50%;
-}
-
-.tk-btn.right {
-  background-image: url('imgs/right.png');
-  right: 16px;
-  top: 50%;
-}
-
-.tk-modal .tk-close {
-  background-image: url('imgs/btn_close.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  display: block;
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 24px;
-  cursor: pointer;
-}
-
-.tk-modal-content {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 700px;
-  height: 100%;
-}
-
-.tk-modal-content img {
-  width: 700px;
-  max-width: 100%;
-  padding: 0 16px;
-}
-
-.tk-modal-content .description {
-  margin-top: 8px;
-  width: 100%;
-  padding: 0 16px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.tk-modal-content span {
-  color: white;
-  font-size: 12px;
-  line-height: 14px;
-}
-      
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="data.js"></script>
   </head>
 
   <body id="page-top">
-    
-      <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color: #000000;">
-  <div class="container">
-    <a class="navbar-brand" href="#page-top">
-      <img src="imgs/logo.png" width="216" height="54" />
-    </a>
-    <button class="navbar-toggler border-0" style="color: #4DBD99;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-dark"
+      style="background-color: #000000;"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">
+          <img src="imgs/logo.png" width="216" height="54" />
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          style="color: #4DBD99;"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        
-          <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
-            <a
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              class="nav-link mx-sm-3"
-              href="#gsm-about"
-            >
-              QUEM SOMOS
-            </a>
-          </li>
-        
-          <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
-            <a
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              class="nav-link mx-sm-3"
-              href="#gsm-areas"
-            >
-              ATUAÇÃO
-            </a>
-          </li>
-        
-          <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
-            <a
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              class="nav-link mx-sm-3"
-              href="#gsm-cases"
-            >
-              CASES
-            </a>
-          </li>
-        
-          <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
-            <a
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              class="nav-link mx-sm-3"
-              href="#gsm-products"
-            >
-              PRODUTOS
-            </a>
-          </li>
-        
-          <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
-            <a
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              class="nav-link mx-sm-3"
-              href="#gsm-contatos"
-            >
-              CONTATO
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-      <div style="background-color: black;">
-  <div class="hero-bg"></div>
-</div>
-      <section id="gsm-about">
-  <div class="first-image"></div>
-  <div class="second-image"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="desc-container first">
-          <h2 class="section-header">ENGENHARIA<br />E NEGÓCIOS</h2>
-          <p class="description">
-            Empresa de engenharia focada em oferecer soluções voltadas ao <strong>mercado de desenvolvimento imobiliário</strong> e <strong>bairros planejados</strong>. Agindo com serviço e atendimento personalizados e flexíveis. Assim estabelecendo <strong>relações de excelência e qualidade com nossos clientes</strong>.
-          </p>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
+              <a
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="nav-link mx-sm-3"
+                href="#gsm-about"
+              >
+                QUEM SOMOS
+              </a>
+            </li>
+
+            <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
+              <a
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="nav-link mx-sm-3"
+                href="#gsm-areas"
+              >
+                ATUAÇÃO
+              </a>
+            </li>
+
+            <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
+              <a
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="nav-link mx-sm-3"
+                href="#gsm-cases"
+              >
+                CASES
+              </a>
+            </li>
+
+            <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
+              <a
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="nav-link mx-sm-3"
+                href="#gsm-products"
+              >
+                PRODUTOS
+              </a>
+            </li>
+
+            <li class="nav-item mx-auto mx-sm-auto my-2  mx-sm-2">
+              <a
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="nav-link mx-sm-3"
+                href="#gsm-contatos"
+              >
+                CONTATO
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <div style="background-color: black;">
+      <div class="hero-bg"></div>
     </div>
-    <div class="row">
-      <div class="col-12 col-lg-6 offset-lg-6">
-        <div class="desc-container second">
-          <h2 class="section-header">FILOSOFIA</h2>
-          <p class="description">
-            <strong>Valorizar a prática da arquitetura, urbanismo e engenharia em harmonia com o meio ambiente</strong>, priorizando os sistemas e os materiais usados, do começo ao fim do projeto.
-          </p>
+    <section id="gsm-about">
+      <div class="first-image"></div>
+      <div class="second-image"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="desc-container first">
+              <h2 class="section-header">ENGENHARIA<br />E NEGÓCIOS</h2>
+              <p class="description">
+                Empresa de engenharia focada em oferecer soluções voltadas ao
+                <strong>mercado de desenvolvimento imobiliário</strong> e
+                <strong>bairros planejados</strong>. Agindo com serviço e
+                atendimento personalizados e flexíveis. Assim estabelecendo
+                <strong
+                  >relações de excelência e qualidade com nossos
+                  clientes</strong
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-6 offset-lg-6">
+            <div class="desc-container second">
+              <h2 class="section-header">FILOSOFIA</h2>
+              <p class="description">
+                <strong
+                  >Valorizar a prática da arquitetura, urbanismo e engenharia em
+                  harmonia com o meio ambiente</strong
+                >, priorizando os sistemas e os materiais usados, do começo ao
+                fim do projeto.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-      <section id="gsm-about-2">
-  <div class="first-image"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="desc-container first">
-          <h2 class="section-header">ÍNDICES DE EFICIÊNCIA<br />DE PROJETO E CUSTO</h2>
-          <p class="description">
-          Utilização de índices históricos como <strong>ferramenta de análise</strong> de projeto, <strong>evitando sub ou super dimensionamento</strong>.
-          </p>
+    </section>
+    <section id="gsm-about-2">
+      <div class="first-image"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="desc-container first">
+              <h2 class="section-header">
+                ÍNDICES DE EFICIÊNCIA<br />DE PROJETO E CUSTO
+              </h2>
+              <p class="description">
+                Utilização de índices históricos como
+                <strong>ferramenta de análise</strong> de projeto,
+                <strong>evitando sub ou super dimensionamento</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="table-container">
+              <img class="table-1" src="imgs/about/tabela1.png" />
+              <img class="table-2" src="imgs/about/tabela2.png" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="table-container">
-          <img class="table-1" src="imgs/about/tabela1.png" />
-          <img class="table-2" src="imgs/about/tabela2.png" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-      <section id="gsm-areas">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="areas-title">
-          <span>5</span>
-          <h2 class="section-header">ÁREAS<br />DE ATUAÇÃO</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="areas-bg">
-    <div class="areas-content">
+    </section>
+    <section id="gsm-areas">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="icons-wrapper">
-              <div class="icon-col">
-                <img src="imgs/areas/paper.png" class="icon-img" />
-                <p class="icon-description">
-                  <strong>Definição</strong><br />do Produto e<br />MasterPlan
-                </p>
-              </div>
-              <div class="icon-col">
-                <img src="imgs/areas/pencil.png" class="icon-img" />
-                <p class="icon-description">
-                  <strong>Projeto</strong> e<br /><strong>Licenciamento</strong>
-                </p>
-              </div>
-              <div class="icon-col">
-                <img src="imgs/areas/worker.png" class="icon-img" />
-                <p class="icon-description">
-                  <strong>Gestão</strong><br />de Obras
-                </p>
-              </div>
-              <div class="icon-col">
-                <img src="imgs/areas/motor.png" class="icon-img" />
-                <p class="icon-description">
-                  <strong>Execução</strong><br />de Obras
-                </p>
-              </div>
-              <div class="icon-col">
-                <img src="imgs/areas/house.png" class="icon-img" />
-                <p class="icon-description">
-                  Nossos<br /><strong>Produtos</strong>
-                </p>
+            <div class="areas-title">
+              <span>5</span>
+              <h2 class="section-header">ÁREAS<br />DE ATUAÇÃO</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="areas-bg">
+        <div class="areas-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="icons-wrapper">
+                  <div class="icon-col">
+                    <img src="imgs/areas/paper.png" class="icon-img" />
+                    <p class="icon-description">
+                      <strong>Definição</strong><br />do Produto e<br />MasterPlan
+                    </p>
+                  </div>
+                  <div class="icon-col">
+                    <img src="imgs/areas/pencil.png" class="icon-img" />
+                    <p class="icon-description">
+                      <strong>Projeto</strong> e<br /><strong
+                        >Licenciamento</strong
+                      >
+                    </p>
+                  </div>
+                  <div class="icon-col">
+                    <img src="imgs/areas/worker.png" class="icon-img" />
+                    <p class="icon-description">
+                      <strong>Gestão</strong><br />de Obras
+                    </p>
+                  </div>
+                  <div class="icon-col">
+                    <img src="imgs/areas/motor.png" class="icon-img" />
+                    <p class="icon-description">
+                      <strong>Execução</strong><br />de Obras
+                    </p>
+                  </div>
+                  <div class="icon-col">
+                    <img src="imgs/areas/house.png" class="icon-img" />
+                    <p class="icon-description">
+                      Nossos<br /><strong>Produtos</strong>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-      <section id="gsm-cases" class="container">
-  <div class="row">
-    <div class="col-12">
-      <div class="section-header-wrapper">
-        <h2 class="section-header">CASES</h1>
-        <p class="section-subheader">Projetos realizados</p>
-      </div>
-    </div>
-    <div class="col-12">
-      <!-- Start of cases section -->
-      <div class="cases-section">
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-1"></div>
-              <div class="description" onclick="openModalImg(1);">
-                <span class="detail"></span>
-                <p>Alphaville<br />burle marx</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-2"></div>
-              <div class="description" onclick="openModalImg(2);">
-                <span class="detail"></span>
-                <p>Alphaville<br />Jacuhy</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-3"></div>
-              <div class="description" onclick="openModalImg(3);">
-                <span class="detail"></span>
-                <p>Alphaville<br />Barra da Tijuca</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-4"></div>
-              <div class="description" onclick="openModalImg(4);">
-                <span class="detail"></span>
-                <p>Alphaville<br />Jacuhy</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-5"></div>
-              <div class="description" onclick="openModalImg(5);">
-                <span class="detail"></span>
-                <p>Alphaville<br />Jacuhy</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-6"></div>
-              <div class="description" onclick="openModalImg(6);">
-                <span class="detail"></span>
-                <p>Dona<br />Carolina</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-7"></div>
-              <div class="description" onclick="openModalImg(7);">
-                <span class="detail"></span>
-                <p>City<br />Parque Itu</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-8"></div>
-              <div class="description" onclick="openModalImg(8);">
-                <span class="detail"></span>
-                <p>Jardins<br />da Cidade</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-9"></div>
-              <div class="description" onclick="openModalImg(9);">
-                <span class="detail"></span>
-                <p>Traços<br />da Cidade</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-10"></div>
-              <div class="description" onclick="openModalImg(10);">
-                <span class="detail"></span>
-                <p>Camaçari<br />(BA)</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-11"></div>
-              <div class="description" onclick="openModalImg(11);">
-                <span class="detail"></span>
-                <p>Guarapari<br />(ES)</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-12"></div>
-              <div class="description" onclick="openModalImg(12);">
-                <span class="detail"></span>
-                <p>Macapá<br />(AP)</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-13"></div>
-              <div class="description" onclick="openModalImg(13);">
-                <span class="detail"></span>
-                <p>Campina<br />Grande</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-14"></div>
-              <div class="description" onclick="openModalImg(14);">
-                <span class="detail"></span>
-                <p>Macapá<br />(AP)</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-          <a
-            class="cases-col"
-            href="javascript:void(0);"
-          >
-            <div class="square">
-              <div class="case-img img-15"></div>
-              <div class="description" onclick="openModalImg(15);">
-                <span class="detail"></span>
-                <p>Profissionais<br />2017</p>
-              </div>
-            </div>
-          </a>
-          <div class="cases-col">
-            <div class="square">
-              <div class="case-img img-logo"></div>
-            </div>
-          </div>
-        
-      </div>
-      <!-- End of cases section -->
-    </div>
-  </div>
-</section>
-      <div class="products-bg">
-  <section id="gsm-products" class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="section-header-wrapper">
-          <h2 class="section-header">PRODUTOS</h1>
-          <p class="section-subheader">Conheça nossos produtos</p>
-        </div>
-      </div>
-      <div class="col-12">
-        
-          <div class="product-card">
-            <div class="section product-images">
-              <img
-                id="expandedImg-0"
-                src="imgs/products/Itatiba_01.jpg"
-                class="expanded-img"
-              />
-              <div class="thumbnails-row">
-                
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Itatiba_01.jpg"
-                      onclick="makeImageExpanded(this, 0)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Itatiba_02.jpg"
-                      onclick="makeImageExpanded(this, 0)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Itatiba_03.jpg"
-                      onclick="makeImageExpanded(this, 0)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Itatiba_04.jpg"
-                      onclick="makeImageExpanded(this, 0)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Itatiba_05.jpg"
-                      onclick="makeImageExpanded(this, 0)"
-                    />
-                  </div>
-                
-              </div>
-            </div>
-            <div class="section product-description">
-              <div class="title">
-                <h3>Portal San Giovanni</h3>
-                <p class="localization">Itatiba / SP</p>
-                <p class="status">Entrega em <strong>novembro de 2019</strong></p>
-              </div>
-              <div class="description-list">
-                <ul>
-                  
-                    <li>
-                      - <strong>3 Suítes</strong> com mezanino
-                    </li>
-                  
-                    <li>
-                      - <strong>2 Vagas</strong> para auto
-                    </li>
-                  
-                    <li>
-                      - <strong>Sala de estar e Escritório</strong> reversível
-                    </li>
-                  
-                    <li>
-                      - <strong>Sala de Jantar e Cozinha</strong> integrados com área de lazer
-                    </li>
-                  
-                </ul>
-              </div>
-              <div class="additional-details">
-                <p class="area-description">Terreno: 380m<sup>2</sup> | Casa: 300m<sup>2</sup></p>
-                
-                  <p class="area-localization">Quadra K - Lote 2</p>
-                
-                  <p class="area-localization">Quadra M - Lote 8</p>
-                
-                  <p class="area-localization">Quadra S1 - Lote 6</p>
-                
-              </div>
-            </div>
-          </div>
-        
-          <div class="product-card">
-            <div class="section product-images">
-              <img
-                id="expandedImg-1"
-                src="imgs/products/Mogi_01.jpg"
-                class="expanded-img"
-              />
-              <div class="thumbnails-row">
-                
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Mogi_01.jpg"
-                      onclick="makeImageExpanded(this, 1)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Mogi_02.jpg"
-                      onclick="makeImageExpanded(this, 1)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Mogi_03.jpg"
-                      onclick="makeImageExpanded(this, 1)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Mogi_04.jpg"
-                      onclick="makeImageExpanded(this, 1)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Mogi_05.jpg"
-                      onclick="makeImageExpanded(this, 1)"
-                    />
-                  </div>
-                
-              </div>
-            </div>
-            <div class="section product-description">
-              <div class="title">
-                <h3>Parque da Imprensa</h3>
-                <p class="localization">Mogi Mirim / SP</p>
-                <p class="status">Finalizado. <strong>Pronta entrega</strong></p>
-              </div>
-              <div class="description-list">
-                <ul>
-                  
-                    <li>
-                      - <strong>3 Dormitórios</strong> (sendo 1 suíte)
-                    </li>
-                  
-                    <li>
-                      - <strong>2 Vagas</strong> para auto
-                    </li>
-                  
-                    <li>
-                      - <strong>TV, Sala de Jantar e Cozinha</strong> integrados com área de lazer
-                    </li>
-                  
-                </ul>
-              </div>
-              <div class="additional-details">
-                <p class="area-description">Terreno: 300,00m<sup>2</sup> | Casa: 155m<sup>2</sup></p>
-                
-              </div>
-            </div>
-          </div>
-        
-          <div class="product-card">
-            <div class="section product-images">
-              <img
-                id="expandedImg-2"
-                src="imgs/products/Rio_02.jpg"
-                class="expanded-img"
-              />
-              <div class="thumbnails-row">
-                
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Rio_02.jpg"
-                      onclick="makeImageExpanded(this, 2)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Rio_03.jpg"
-                      onclick="makeImageExpanded(this, 2)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Rio_04.jpg"
-                      onclick="makeImageExpanded(this, 2)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Rio_05.jpg"
-                      onclick="makeImageExpanded(this, 2)"
-                    />
-                  </div>
-                
-              </div>
-            </div>
-            <div class="section product-description">
-              <div class="title">
-                <h3>Alphaville Rio Costa do Sol</h3>
-                <p class="localization">Rio das Ostras / RJ</p>
-                <p class="status">Em desenvolvimento</p>
-              </div>
-              <div class="description-list">
-                <ul>
-                  
-                    <li>
-                      - <strong>4 Dormitórios</strong> (sendo 2 suítes) com mezanino
-                    </li>
-                  
-                    <li>
-                      - <strong>2 Vagas</strong> para auto
-                    </li>
-                  
-                    <li>
-                      - <strong>Escritório</strong> reversível
-                    </li>
-                  
-                    <li>
-                      - <strong>Sala de Estar, TV, Sala de Jantar e Cozinha</strong> integrados com área de lazer
-                    </li>
-                  
-                </ul>
-              </div>
-              <div class="additional-details">
-                <p class="area-description">Terreno: 460m<sup>2</sup> | Casa: 330m<sup>2</sup></p>
-                
-                  <p class="area-localization">Residencial 1 - Quadra O - Lote 7</p>
-                
-              </div>
-            </div>
-          </div>
-        
-          <div class="product-card">
-            <div class="section product-images">
-              <img
-                id="expandedImg-3"
-                src="imgs/products/Vitoria_01.jpg"
-                class="expanded-img"
-              />
-              <div class="thumbnails-row">
-                
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Vitoria_01.jpg"
-                      onclick="makeImageExpanded(this, 3)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Vitoria_02.jpg"
-                      onclick="makeImageExpanded(this, 3)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Vitoria_03.jpg"
-                      onclick="makeImageExpanded(this, 3)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Vitoria_04.jpg"
-                      onclick="makeImageExpanded(this, 3)"
-                    />
-                  </div>
-                
-                  <div class="thumbnail-col">
-                    <img
-                      src="imgs/products/Vitoria_05.jpg"
-                      onclick="makeImageExpanded(this, 3)"
-                    />
-                  </div>
-                
-              </div>
-            </div>
-            <div class="section product-description">
-              <div class="title">
-                <h3>Alphaville Jacuhy</h3>
-                <p class="localization">Vitória / ES</p>
-                <p class="status">Entrega em <strong>novembro de 2019</strong></p>
-              </div>
-              <div class="description-list">
-                <ul>
-                  
-                    <li>
-                      - <strong>4 Dormitórios</strong> (sendo 2 suítes) com mezanino
-                    </li>
-                  
-                    <li>
-                      - <strong>2 Vagas</strong> para auto
-                    </li>
-                  
-                    <li>
-                      - <strong>Escritório</strong> reversível
-                    </li>
-                  
-                    <li>
-                      - <strong>Sala de Estar, TV, Sala de Jantar e Cozinha</strong> integrados com área de lazer
-                    </li>
-                  
-                </ul>
-              </div>
-              <div class="additional-details">
-                <p class="area-description">Terreno: 460m<sup>2</sup> | Casa: 330m<sup>2</sup></p>
-                
-                  <p class="area-localization">Residencial 4 - Quadra L - Lote 13</p>
-                
-              </div>
-            </div>
-          </div>
-        
-      </div>
-    </div>
-  </section>
-</div>
-      <div id="gsm-contatos" class="tk-footer-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="tk-footer">
-          <img class="footer-logo" src="imgs/logo_footer.png" />
-          <div class="address-n-contact-wrapper">
-            <div class="address-wrapper">
-              <h3 class="contact-title">CONTATO</h3>
-              <p class="contact">
-                Rua Sebastião Lanza, 317<br/>
-                CEP 13805-027 - Mogi Mirim/SP
-              </p>
-              <p class="contact">
-                +55 11 5096-4265
-              </p>
-              <a
-                class="email"
-                href="mailto:contato@silveiramarques.com"
-              >
-                contato@silveiramarques.com
-              </a>
-            </div>
-            <div class="social-contacts">
-              
-                <a href="https://www.facebook.com/Silveira-Marques-Engenharia-369667870472927/" target="_blank">
-                  <img src="imgs/btn_facebook.png" />
-                </a>
-              
-                <a href="https://www.instagram.com/silveiramarqueseng/" target="_blank">
-                  <img src="imgs/btn_instagram.png" />
-                </a>
-              
-                <a href="https://www.linkedin.com/company/silveira-marques-engenharia/" target="_blank">
-                  <img src="imgs/btn_linkedin.png" />
-                </a>
-              
-            </div>
+    </section>
+    <section id="gsm-cases" class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-header-wrapper">
+            <h2 class="section-header">CASES</h2>
+            <p class="section-subheader">Projetos realizados</p>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="col-12">
+          <!-- Start of cases section -->
+          <div class="cases-section">
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-1"></div>
+                <div class="description" onclick="openModalImg(1);">
+                  <span class="detail"></span>
+                  <p>Alphaville<br />burle marx</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
 
-      <div id="imgModal" class="tk-modal">
-  <span class="tk-close" onclick="closeModalImg();"></span>
-  <span class="tk-btn left" onclick="goLeft();"></span>
-  <span class="tk-btn right" onclick="goRight();"></span>
-  <div class="tk-modal-content">
-    <img id="imgInModal"/>
-    <div class="description">
-      <span id="projectName"></span>
-      <span id="counter"></span>
-    </div>
-  </div>
-</div>
-    
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-2"></div>
+                <div class="description" onclick="openModalImg(2);">
+                  <span class="detail"></span>
+                  <p>Alphaville<br />Jacuhy</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-3"></div>
+                <div class="description" onclick="openModalImg(3);">
+                  <span class="detail"></span>
+                  <p>Alphaville<br />Barra da Tijuca</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-4"></div>
+                <div class="description" onclick="openModalImg(4);">
+                  <span class="detail"></span>
+                  <p>Alphaville<br />Jacuhy</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-5"></div>
+                <div class="description" onclick="openModalImg(5);">
+                  <span class="detail"></span>
+                  <p>Alphaville<br />Jacuhy</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-6"></div>
+                <div class="description" onclick="openModalImg(6);">
+                  <span class="detail"></span>
+                  <p>Dona<br />Carolina</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-7"></div>
+                <div class="description" onclick="openModalImg(7);">
+                  <span class="detail"></span>
+                  <p>City<br />Parque Itu</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-8"></div>
+                <div class="description" onclick="openModalImg(8);">
+                  <span class="detail"></span>
+                  <p>Jardins<br />da Cidade</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-9"></div>
+                <div class="description" onclick="openModalImg(9);">
+                  <span class="detail"></span>
+                  <p>Traços<br />da Cidade</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-10"></div>
+                <div class="description" onclick="openModalImg(10);">
+                  <span class="detail"></span>
+                  <p>Camaçari<br />(BA)</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-11"></div>
+                <div class="description" onclick="openModalImg(11);">
+                  <span class="detail"></span>
+                  <p>Guarapari<br />(ES)</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-12"></div>
+                <div class="description" onclick="openModalImg(12);">
+                  <span class="detail"></span>
+                  <p>Macapá<br />(AP)</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-13"></div>
+                <div class="description" onclick="openModalImg(13);">
+                  <span class="detail"></span>
+                  <p>Campina<br />Grande</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-14"></div>
+                <div class="description" onclick="openModalImg(14);">
+                  <span class="detail"></span>
+                  <p>Macapá<br />(AP)</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+
+            <a class="cases-col" href="javascript:void(0);">
+              <div class="square">
+                <div class="case-img img-15"></div>
+                <div class="description" onclick="openModalImg(15);">
+                  <span class="detail"></span>
+                  <p>Profissionais<br />2017</p>
+                </div>
+              </div>
+            </a>
+            <div class="cases-col">
+              <div class="square">
+                <div class="case-img img-logo"></div>
+              </div>
+            </div>
+          </div>
+          <!-- End of cases section -->
+        </div>
+      </div>
+    </section>
+
+    <div class="products-bg">
+      <section id="gsm-products" class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-header-wrapper">
+              <h2 class="section-header">PRODUTOS</h2>
+              <p class="section-subheader">Conheça nossos produtos</p>
+            </div>
+          </div>
+
+          <!-- Os produtos devem ser modificados no arquivo data.js -->
+          <div id="react-product" class="col-12"></div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- As informações de contato devem ser modificadas no arquivo data.js -->
+    <div id="gsm-contatos" class="tk-footer-wrapper"></div>
+
+    <div id="imgModal" class="tk-modal">
+      <span class="tk-close" onclick="closeModalImg();"></span>
+      <span class="tk-btn left" onclick="goLeft();"></span>
+      <span class="tk-btn right" onclick="goRight();"></span>
+      <div class="tk-modal-content">
+        <img id="imgInModal" />
+        <div class="description">
+          <span id="projectName"></span>
+          <span id="counter"></span>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dist/products.js"></script>
     <script>
-      
-        let currModalImgIdx = 0;
+      let currModalImgIdx = 0;
 
-const caseImages = [];
+      const caseImages = [];
 
-  caseImages.push({
-    "src": "imgs/cases/01_Alphaville Burle Marx_4.jpg",
-    "description": "Alphaville - Burle Marx",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/02_Alphaville Jacuhy_1.jpg",
-    "description": "Alphaville - Jacuhy 1",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/03_Alphaville Barra da Tijuca_8.jpg",
-    "description": "Alphaville - Barra da Tijuca",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/04_Alphaville Jacuhy_IMG_0179.jpg",
-    "description": "Alphaville - Jacuhy 2",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/05_Alphaville Jacuhy_IMG_0470.jpg",
-    "description": "Alphaville - Jacuhy 3",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/06_Dona Carolina_4.jpg",
-    "description": "Dona Carolina",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/07_City Parque Itu_7.jpg",
-    "description": "City Parque Itu",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/08_Jardins da Cidade_5.jpg",
-    "description": "Jardins da Cidade",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/09_Tracos da Cidade_3.jpg",
-    "description": "Traços da Cidade",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/10_Camacari_BA_4.jpg",
-    "description": "Camaçari (BA)",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/11_Guarapari_ES_12.jpg",
-    "description": "Guarapari (ES)",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/12_Macapa_AP_2.jpg",
-    "description": "Macapá (AP) 1",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/13_Campina Grande.jpg",
-    "description": "Campina Grande",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/14_Macapa_AP_7.jpg",
-    "description": "Macapá (AP) 2",
-  });
-
-  caseImages.push({
-    "src": "imgs/cases/15_PROFISSIONAIS 2017_DJI_0109 ok.jpg",
-    "description": "Profissionais 2017",
-  });
-
-
-function closeModalImg() {
-  const modal = document.getElementById("imgModal");
-  modal.style.display = "none";
-}
-
-function goRight() {
-  currModalImgIdx = (currModalImgIdx + 1)%(caseImages.length);
-  selectImage();
-}
-
-function goLeft() {
-  currModalImgIdx = (currModalImgIdx - 1 + caseImages.length)%(caseImages.length);
-  selectImage();
-}
-
-function selectImage() {
-  const imgInModal = document.getElementById("imgInModal");
-  const projectName = document.getElementById("projectName");
-  const counter = document.getElementById("counter");
-
-  imgInModal.src = caseImages[currModalImgIdx].src;
-  projectName.textContent = caseImages[currModalImgIdx].description;
-  counter.textContent = `${currModalImgIdx+1} de ${caseImages.length}`;
-}
-
-function openModalImg(imgIndex) {
-  const modal = document.getElementById("imgModal");
-  currModalImgIdx = imgIndex - 1;
-  selectImage();
-  modal.style.display = "block";
-}
-
-function checkKey(e) {
-  e = e || window.event;
-  if (e.keyCode == '37') {
-    goLeft();
-  }
-  else if (e.keyCode == '39') {
-    goRight();
-  }
-}
-
-document.onkeydown = checkKey;
-        $(document).ready(function(){
-  $("a").on('click', function(event) {
-
-    if (this.hash !== "") {
-      event.preventDefault();
-
-      var hash = this.hash;
-
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 85
-      }, 800, function(){
-
-        window.location.hash = hash;
+      caseImages.push({
+        src: "imgs/cases/01_Alphaville Burle Marx_4.jpg",
+        description: "Alphaville - Burle Marx"
       });
-    }
-  });
-});
-        function makeImageExpanded(img, carouselIdx) {
-  var expandedImg = document.getElementById(`expandedImg-${carouselIdx}`);
-  expandedImg.src = img.src;
-}
-      
+
+      caseImages.push({
+        src: "imgs/cases/02_Alphaville Jacuhy_1.jpg",
+        description: "Alphaville - Jacuhy 1"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/03_Alphaville Barra da Tijuca_8.jpg",
+        description: "Alphaville - Barra da Tijuca"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/04_Alphaville Jacuhy_IMG_0179.jpg",
+        description: "Alphaville - Jacuhy 2"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/05_Alphaville Jacuhy_IMG_0470.jpg",
+        description: "Alphaville - Jacuhy 3"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/06_Dona Carolina_4.jpg",
+        description: "Dona Carolina"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/07_City Parque Itu_7.jpg",
+        description: "City Parque Itu"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/08_Jardins da Cidade_5.jpg",
+        description: "Jardins da Cidade"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/09_Tracos da Cidade_3.jpg",
+        description: "Traços da Cidade"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/10_Camacari_BA_4.jpg",
+        description: "Camaçari (BA)"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/11_Guarapari_ES_12.jpg",
+        description: "Guarapari (ES)"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/12_Macapa_AP_2.jpg",
+        description: "Macapá (AP) 1"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/13_Campina Grande.jpg",
+        description: "Campina Grande"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/14_Macapa_AP_7.jpg",
+        description: "Macapá (AP) 2"
+      });
+
+      caseImages.push({
+        src: "imgs/cases/15_PROFISSIONAIS 2017_DJI_0109 ok.jpg",
+        description: "Profissionais 2017"
+      });
+
+      function closeModalImg() {
+        const modal = document.getElementById("imgModal");
+        modal.style.display = "none";
+      }
+
+      function goRight() {
+        currModalImgIdx = (currModalImgIdx + 1) % caseImages.length;
+        selectImage();
+      }
+
+      function goLeft() {
+        currModalImgIdx =
+          (currModalImgIdx - 1 + caseImages.length) % caseImages.length;
+        selectImage();
+      }
+
+      function selectImage() {
+        const imgInModal = document.getElementById("imgInModal");
+        const projectName = document.getElementById("projectName");
+        const counter = document.getElementById("counter");
+
+        imgInModal.src = caseImages[currModalImgIdx].src;
+        projectName.textContent = caseImages[currModalImgIdx].description;
+        counter.textContent = `${currModalImgIdx + 1} de ${caseImages.length}`;
+      }
+
+      function openModalImg(imgIndex) {
+        const modal = document.getElementById("imgModal");
+        currModalImgIdx = imgIndex - 1;
+        selectImage();
+        modal.style.display = "block";
+      }
+
+      function checkKey(e) {
+        e = e || window.event;
+        if (e.keyCode == "37") {
+          goLeft();
+        } else if (e.keyCode == "39") {
+          goRight();
+        }
+      }
+
+      document.onkeydown = checkKey;
+      $(document).ready(function() {
+        $("a").on("click", function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top - 85
+              },
+              800,
+              function() {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
     </script>
   </body>
 </html>
