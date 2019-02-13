@@ -1,4 +1,29 @@
+/*
+ * Este arquivo contém as informações relativas as sessões de produto e de contato.
+ * Qualquer alteração neste arquivo irá alterar as informações exibidas no website.
+ * Para modificar este arquivo você precisa estar logado(a) no site www.github.com
+ *
+ * 
+ * MODIFICAÇÕES NA SESSÃO DE PRODUTOS E CONTATO:
+ *   Basta realizar as alterações neste mesmo arquivo ('data.js').
+ *
+ *
+ * MODIFICAÇÕES EM OUTRAS SESSÕES DO SITE:
+ *   Modificações de texto em outras sessões do site podem ser realizadas modificando
+ *   o arquivo 'index.html'. Basta procurar no arquivo o texto que você deseja modificar
+ *   e modificá-lo.
+ *
+ *
+ * MODIFICAÇÕES NA SESSÃO DE CASES:
+ *   Modificações na sessão de cases não é suportada de maneira fácil. Contudo é possível
+ *   fazer modificações de texto procurando no arquivo 'index.html' o texto que você deseja
+ *   modificar e modificá-lo.
+  * */
+
 window.globalData = {
+  /*
+   * Informações de contato
+  * */
   contact: {
     addressLineOne: 'Rua Sebastião Lanza, 317',
     addressLineTwo: 'CEP 13805-027 - Mogi Mirim/SP',
@@ -20,6 +45,18 @@ window.globalData = {
       url: 'https://www.linkedin.com/company/silveira-marques-engenharia/'
     }
   ],
+
+
+  /*
+   * Informações de produtos
+   *
+   * Observações:
+   * - Para alterar o status de uma obra, basta modificar o campo 'status'.
+   * - O campo 'imageSrcs' representa as imagens pequenas que aparecem no card do produto.
+   *   -->> Tal campo suporta apenas 5 imagens <<--.
+   * - Caso seja necessário alterar alguma imagem, não esquecer de colocar o nome dela na lista
+   *   'imageSrcs' e também de fazer o upload da nova imagem.
+  * */
   products: [
     {
       title: 'Portal San Giovanni',
